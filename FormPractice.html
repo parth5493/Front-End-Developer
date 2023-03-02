@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormPractice</title>
+</head>
+<body style="background-color: rgb(180, 114, 114);">
+    <fieldset>
+        <legend align="center"><b>Payment Information</b></legend>
+        <form action="./KrivaImage.jpeg" method="post">
+        <table align="center">
+            <tr>
+                <th><strong>Step 1: Your details</strong></th>
+            </tr>
+            <tr>
+                <td><label for="Name">Name</label></td>
+                <td><input type="text"required name="" id="Name" placeholder="First and last name"></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email</label></td>
+                <td><input type="email" required name="" id="Email" placeholder="example@domian.com"></td>
+            </tr>
+            <tr>
+                <td><label for="Phone">Phone</label></td>
+                <td><input type="tel" required name="" id="Phone" placeholder="Eg. +1xxxxxxxxxx"></td>
+            </tr>
+            <tr>
+                <th><strong>Step 2: Delivery address</strong></th>
+            </tr>
+            <tr>
+                <td><label for="Address">Address</label></td>
+                <td><textarea name="" required id="Address" cols="20" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="Post Code">Post Code</label></td>
+                <td><input type="text" required name="" id="Post Code"></td>
+            </tr>
+            <tr>
+                <td><label for="Country">Country</label></td>
+                <td><input type="text" required name="" id="Country"></td>
+            </tr>
+            <tr>
+                <th><strong>Step 3: Card details</strong></th>
+            </tr>
+            <tr>
+                <td>Card type</td>
+                <td><input type="radio" name="option" id=""><img src="./VisaButtonImage.png" alt="" width="10%">VISA</td>
+                <td><input type="radio" name="option" id=""><img src="./AmexImage.png" alt="" width="10%">AmEx</td>
+                <td><input type="radio" name="option" id=""><img src="./MasterCardImage.png" alt="" width="10%">Mastercard</td>
+            </tr>
+            <tr>
+                <td><label for="Card Number">Card Number</label></td>
+                <td><input type="tel" required name="" id="Card Number"></td>
+            </tr>
+            <tr>
+                <td><label for="Security code">Security code</label></td>
+                <td><input type="tel" required name="" id="Security code"></td>
+            </tr>
+            <tr>
+                <td><label for="Name on card">Name on card</label></td>
+                <td><input type="text" required name="" id="Name on card" placeholder="Exact name as on the card"></td>
+            </tr>
+            <tr>
+                <td align="center"><input type="submit" value="BUY IT!"></td>
+            </tr>
+        </table>
+    </form>
+    </fieldset>
+</body>
+</html>
