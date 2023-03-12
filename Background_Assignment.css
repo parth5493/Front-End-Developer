@@ -1,0 +1,10 @@
+div{
+    height: 500px;
+}
+
+.parth{
+    background: url(https://picsum.photos/id/237/1200/300), linear-gradient(rgb(255, 115, 0),white,green);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
