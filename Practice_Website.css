@@ -1,0 +1,30 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightcoral;
+}
+.logo{
+    width: 50px;
+}
+img{
+    width: 100%;
+}
+ul li{
+    display: inline-block;
+    margin: 0 50px;
+}
+a{
+    text-decoration: none;
+}
+.line{
+  /*  line-height: 100px; */
+  align-items: center;
+}
+.kriva{
+    height: 400px;
+    width: 300px;
+}
