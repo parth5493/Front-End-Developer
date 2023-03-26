@@ -1,0 +1,103 @@
+html {
+    scroll-behavior: smooth;
+  }
+.container{
+    margin: 0;
+    padding: 0;
+    background-image: url(./pexels-matt-hardy-3560168.jpg);
+    background-size: cover;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+ul li{
+    display: inline-block;
+    margin: 0 25px;
+}
+.center{
+    text-align: center;
+    color: white;
+}
+.right{
+    text-align: right;
+}
+.size{
+    font-size: 30px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font{
+    color: white;
+}
+.margin{
+    padding: 50px auto;
+}
+.row2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.font_black{
+    color: rgb(34, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.row3{
+    display: flex;
+    justify-content: space-between;
+}
+.size{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top{
+    margin-bottom: 100px;
+}
+.row4{
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 0 0 0;
+}
+#pic1{
+    height: 500px;
+    width: 400px;
+}
+#pic2{
+    height: 500px;
+    width: 400px;
+}
+#pic3{
+    height: 500px;
+    width: 400px;
+}
+#pic4{
+    height: 500px;
+    width: 400px;
+}
+#pic5{
+    height: 500px;
+    width: 400px;
+}
+#pic6{
+    height: 500px;
+    width: 400px;
+}
+.container2{
+    margin: 100px auto;
+}
