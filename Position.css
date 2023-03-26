@@ -1,0 +1,25 @@
+section{
+    background-color: pink;
+    height: 800px;
+    display: flex;
+}
+.box{
+    border: solid 5px rgb(44, 199, 44);
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+#position3{
+    /*position: relative;*/
+    /*position: absolute;*/
+    /*position: fixed;*/
+    position: sticky;
+    top: 300px;
+}
+.mini-jenny{
+   /* width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 50px;*/
+}
