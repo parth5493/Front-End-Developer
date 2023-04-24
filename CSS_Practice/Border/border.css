@@ -1,0 +1,38 @@
+div{
+    margin: 20px;
+    padding: 100px;
+}
+.box{
+    border: solid 10px lawngreen;
+    border-radius: 50%;
+    width: 10px;
+
+}
+.solid{
+    border: solid 10px orangered;
+}
+.box-dashed{
+    border: dashed 10px green;
+}
+.box-dotted{
+    border: dotted 10px red;
+}
+.box-inset{
+    border: inset 10px hotpink;
+}
+.box-outset{
+    border: outset 10px hotpink;
+}
+.box-groove{
+    border: groove 20px orange;
+}
+.box-ridge{
+    border: ridge 20px orange;
+}
+.box2{
+    border-top: solid 10px orangered;
+    border-bottom: solid 10px green;
+    border-left: solid 10px blue;
+    border-right: solid 10px lightcoral;
+    border-radius: 50%;
+}

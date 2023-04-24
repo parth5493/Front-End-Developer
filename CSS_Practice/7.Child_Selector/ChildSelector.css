@@ -1,0 +1,11 @@
+section > h1{
+    color: red;
+}
+
+div > p{
+    color: red;
+}
+
+section > div{
+    color: blue;
+}

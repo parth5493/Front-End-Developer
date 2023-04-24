@@ -1,0 +1,56 @@
+.background-color{
+    background-color: orangered;
+}
+
+div{
+    height: 500px;
+    border: solid 20px cornflowerblue;
+    padding: 100px;
+    margin: 10px;
+}
+
+.background-img{
+    background-image: url(https://picsum.photos/id/237/200/300);
+}
+
+.background-repeat{
+    background-image: url(https://picsum.photos/id/237/200/300);
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+}
+.background-attachment{
+    background-image: url(https://picsum.photos/id/237/200/300);
+    background-attachment: fixed;
+}
+.background-position{
+    background-image: url(https://picsum.photos/id/237/200/300);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: left;
+    background-position: right;
+    background-position: 100px;
+}
+.background-size{
+    background-image: url(https://picsum.photos/id/237/1000/500);
+    background-repeat: no-repeat;
+    background-size: contain;   
+    background-size: cover;
+    background-position: top 100px;
+}
+
+.background-clip{
+    background-image: url(https://picsum.photos/id/237/1000/500);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-clip: content-box;
+    background-clip: padding-box;
+}
+
+.background{
+    background: url(https://picsum.photos/id/237/200/300) no-repeat;
+}
+
+.background-flag{
+    background: linear-gradient( 100deg , orangered, white, green);
+}

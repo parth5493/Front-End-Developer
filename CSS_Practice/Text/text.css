@@ -1,0 +1,32 @@
+.text-color{
+    color: orangered;
+}
+div{
+    width: 400px;
+}
+.text-al{
+    text-align: center;
+    text-align: left;
+    text-align: right;
+    text-align: justify;
+}
+.text-dec{
+    text-decoration: underline;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.text-tra{
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-indent: 50px;
+}
+h1{
+    text-shadow: 8px 8px 5px rebeccapurple;
+}

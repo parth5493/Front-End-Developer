@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclass</title>
+    <style>
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            background-color: hotpink;
+        }
+        h1::before{
+            content: '[';
+            color: red;
+        }
+        h1::after{
+            content: ']';
+            color: red;
+        }
+        p::selection{
+            background-color: gold;
+        }
+        p:hover{
+            background-color: green;
+        }
+        a:visited{
+            color: orangered;
+        }
+        a:link{
+            background-color: green;
+        }
+        input:focus{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, autem incidunt ullam mollitia velit nulla magni debitis dignissimos deserunt porro consequatur vero voluptatibus neque. Distinctio tempora dolore necessitatibus cumque temporibus.</p>
+
+    <h1>Kriva</h1>
+
+    <a href="#">Kriva</a>
+
+    <input type="text">
+</body>
+</html>

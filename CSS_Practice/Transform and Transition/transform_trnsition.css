@@ -1,0 +1,20 @@
+img{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 150px;
+    transition: 3s ease-in-out;
+}
+img:hover{
+    /*transform: translate(100px);
+    transform: translateX(-100px);
+    transform: translateY(-100px);*/
+    /*transform: rotate(360deg);
+    transform: rotateX(360deg);
+    transform: rotateY(360deg);*/
+    transform: scale(2);
+    /*transform: scaleX(2);
+    transform: scaleY(2);*/
+    transform: skew(360deg);
+}

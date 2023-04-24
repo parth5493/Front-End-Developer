@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border: solid 2px;
+}
+.cart{
+    width: 30%;
+    display: inline-block;
+    border: solid 1px;
+}
