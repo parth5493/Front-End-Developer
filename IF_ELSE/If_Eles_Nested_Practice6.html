@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If and Else Nested Practice 6</title>
+</head>
+<body>
+    <script>
+        let marks = prompt("Tell Us your Marks")
+
+        if (marks >= 0 && marks <= 100) {
+            if(marks >= 50){
+                if (marks >= 50 && marks < 60) {
+                document.write("Pass Class") 
+                }
+                else if (marks >= 60 && marks < 70){
+                    document.write("Second Class")
+                }
+                else if (marks >= 70 && marks < 80){
+                    document.write("First Class")
+                }
+                else if (marks >= 80 && marks < 90){
+                    document.write("Distiction")
+                }
+                else if (marks >= 90 && marks <= 100){
+                    document.write("Top Class")
+                }
+                else if (marks < 50 && marks >= 0) {
+                    document.write("You failed in Exam")
+                }
+            } else {
+                document.write("You failed in Exam")
+            }    
+        } 
+        else {
+            document.write("Invalid Entry")
+        }
+    </script>
+</body>
+</html>
