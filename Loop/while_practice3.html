@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Practice 3</title>
+</head>
+<body>
+    <script>
+        let a = 0
+        while (a < 7) {
+            for (b = 0; b < 7; b++) {
+                if (a == 0 || a == 6 || b == 0 || b == 6) {
+                    document.write("*")
+                } else {
+                    document.write("&nbsp;&nbsp;")
+                }                
+            }
+            a++
+            document.write("<br>")            
+        }
+    </script>
+</body>
+</html>
