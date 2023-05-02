@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Practice 2 With JS</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Enter Your Mark in English")) 
+        let b = parseInt(prompt("Enter Your Mark in Maths")) 
+        let c = parseInt(prompt("Enter Your Mark in Science")) 
+        let d = parseInt(prompt("Enter Your Mark in IT")) 
+
+        document.write("Marks in English = " + a)
+        document.write("<br>")
+        document.write("Marks in Maths = " + b)
+        document.write("<br>")
+        document.write("Marks in Science = " + c)
+        document.write("<br>")
+        document.write("Marks in IT = " + d)
+        document.write("<br>")
+
+        let totalmarks = a+b+c+d 
+        document.write("Total marks = " + totalmarks)
+        document.write("<br>")
+
+        if (a >= 25 && b >= 25 && c >= 25 && d >= 25 && a <= 50 && b <= 50 && c <= 50 && d <= 50 ) {
+         if (totalmarks >= 100) {
+                    if (totalmarks >= 100 && totalmarks < 120) {
+                      document.write("Pass class")
+                     } else if (totalmarks >= 120 && totalmarks < 150) {
+                         document.write("Second class")
+                     } else if (totalmarks >= 150 && totalmarks < 180) {
+                         document.write("First class")
+                     } else if (totalmarks >= 180 && totalmarks <= 200) {
+                         document.write("dist class")
+                     }
+                 } else {
+                     document.write("Failed")
+                 }
+             } else {
+                 document.write("Failed OR Invalid Entry")
+
+             }
+    </script>
+</body>
+</html>
