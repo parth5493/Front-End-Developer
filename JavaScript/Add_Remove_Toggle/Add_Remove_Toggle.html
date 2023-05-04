@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add_Remove_Toggle Practice</title>
+    <style>
+        .prb{
+            background-color: orangered;
+            color: rgb(132, 237, 100);
+        }
+    </style>
+</head>
+<body>
+    <h2>Add_Remove_Toggle Practice</h2>
+    <p id="custom_para" class="something data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolorem culpa deleniti eum corporis ea consequatur officia tempore mollitia commodi earum amet quia, distinctio, fugiat pariatur quidem? Maxime, impedit accusamus.</p>
+    <button id="addclass">Add Class</button>
+    <button id="removeclass">Remove Class</button>
+    <button onclick="togglefunction()">Toggle</button>
+    <button id="changeele">Change Element</button>
+
+    <div id="ele">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse labore et minima id rerum quia porro dolore voluptatum maiores, rem sunt maxime at non! Hic vel aliquam repellat quos veniam.</p>
+    </div>
+
+    <script>
+        document.getElementById("addclass").addEventListener("click", function () {
+            console.log("Called Add Class");
+
+            let para = document.getElementById("custom_para")
+            console.log(para);
+            console.log(para.classList);
+            para.classList.add("prb")
+
+           // document.getElementById("custom_para").classList.add("prb")
+        })
+
+        document.getElementById("removeclass").addEventListener("click", function () {
+            console.log("Called Remove Class");
+            
+            let para = document.getElementById("custom_para")
+            console.log(para);
+            console.log(para.classList);
+            para.classList.remove("prb")
+
+        })
+        document.getElementById("changeele").addEventListener("click", function () {
+            
+            let para2 = document.getElementById("ele")
+            console.log(para2);
+
+            //document.getElementById("ele").innerHTML="<h2>Kriva</h2>"
+            document.getElementById("ele").innerText="Hiral"
+        })
+
+        function togglefunction() {
+           console.log("Called Toggle Class"); 
+
+           let fun_para = document.getElementById("custom_para").classList
+           console.log(fun_para);
+           console.log(fun_para.length);
+           if (fun_para.length > 2) {
+                console.log("Called inside if");
+           } 
+                if (fun_para[2] == "prb") {
+                    document.getElementById("custom_para").classList.remove("prb")
+                } 
+           else {
+                document.getElementById("custom_para").classList.add("prb")
+           }
+        }
+
+        
+    </script>
+</body>
+</html>
