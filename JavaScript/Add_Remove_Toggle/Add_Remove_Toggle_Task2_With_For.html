@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Remove Toggle Task 2</title>
+    <style>
+        .colour{
+            background-color: brown;
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Remove Toggle Task 2</h1>
+
+    <p id="p1" class="colour para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nesciunt voluptas eaque ducimus dolorem quibusdam magnam amet accusantium vero, veniam debitis quam sit, quaerat quis architecto fuga nam nostrum aperiam!</p>
+    <p id="p3" class="colour para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod nemo, officia voluptate quidem repellat tenetur excepturi itaque eius necessitatibus qui alias enim, maiores cupiditate quam sapiente vero ut, tempora distinctio!</p>
+
+    <button id="toggle">Toggle</button>
+
+    <script>
+        document.getElementById("toggle").addEventListener("click",function () {
+            console.log("function called");
+
+            let paralist1 = document.getElementById("p1").classList
+            let paralist2 = document.getElementById("p3").classList
+
+            for (i = 0, j = paralist1.length; i < j; i++) {
+               // console.log(paralist1[i].length);
+                if (paralist1[i] == "colour") {
+                    document.getElementById("p1").classList.remove("colour")
+                    document.getElementById("p3").classList.remove("colour")
+                } else {
+                    document.getElementById("p1").classList.add("colour")
+                    document.getElementById("p3").classList.add("colour")
+                }                
+            }
+            
+        })
+    </script>
+</body>
+</html>
