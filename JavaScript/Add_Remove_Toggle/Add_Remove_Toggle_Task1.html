@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Remove Toggle Task 1</title>
+    <style>
+        .colour{
+            background-color: brown;
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Remove Toggle Task 1</h1>
+
+    <p id="p1" class="colour para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nesciunt voluptas eaque ducimus dolorem quibusdam magnam amet accusantium vero, veniam debitis quam sit, quaerat quis architecto fuga nam nostrum aperiam!</p>
+    <p id="p2" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eligendi facere vitae. Magni enim architecto ratione voluptatum optio reiciendis officiis iusto sed quisquam delectus beatae mollitia ipsam, dolore facere iste?</p>
+    <p id="p3" class="colour para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod nemo, officia voluptate quidem repellat tenetur excepturi itaque eius necessitatibus qui alias enim, maiores cupiditate quam sapiente vero ut, tempora distinctio!</p>
+    <p id="p4" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dicta facere ut provident? Magnam nulla dolores eos alias porro veritatis cupiditate optio cumque numquam sit quae pariatur, quod voluptatem est.</p>
+
+    <button id="toggle">Toggle</button>
+
+    <script>
+        
+        document.getElementById("toggle").addEventListener("click", function (params) {
+           console.log("Function called"); 
+
+           let paralist1 = document.getElementById("p1").classList
+           let paralist2 = document.getElementById("p2").classList
+           let paralist3 = document.getElementById("p3").classList
+           let paralist4 = document.getElementById("p4").classList
+           //console.log(paralist);
+           //console.log(paralist1.contains("colour")); 
+        
+           if (paralist1.contains("colour") || paralist3.contains("colour")) {
+                document.getElementById("p1").classList.remove("colour")
+                document.getElementById("p2").classList.add("colour")
+                document.getElementById("p3").classList.remove("colour")
+                document.getElementById("p4").classList.add("colour")
+           } else {
+                document.getElementById("p1").classList.add("colour")
+                document.getElementById("p2").classList.remove("colour")
+                document.getElementById("p3").classList.add("colour")
+                document.getElementById("p4").classList.remove("colour")
+           }
+        })
+
+
+    </script>
+
+</body>
+</html>
