@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td><input type="text" name="username" id="username" onblur="getfunction()" required> <span id="usernameerror"></span></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" id="password" onblur="getfunction()" required> <span id="passworderror"></span> </td>
+            </tr>
+            <tr>
+                <td><label for="confirmpassword">Confirm Password</label></td>
+                <td><input type="password" name="confirmpassword" id="confirmpassword" onblur="getfunction()" required> <span id="confirmpassworderror"></span></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address</label></td>
+                <td><input type="email" name="email" id="email" onblur="getfunction()"> <span id="emailerror"></span></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile Number</label></td>
+                <td><input type="tel" name="mobile" id="mobile" onblur="getfunction()" required> <span id="phonenumbererror"></span></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="btn" id="btn"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function getfunction(){
+           // console.log("called");
+            let uname = document.getElementById("username").value
+            //console.log(uname);
+
+            if (uname == "") {
+                document.getElementById("usernameerror").innerHTML = ("<b> This field must be filled.Ex: Parthkumar Patel</b>")
+            } else {
+                document.getElementById("usernameerror").innerHTML = ("")
+            }
+
+            let upass = document.getElementById("password").value
+            //console.log(upass);
+            if (upass == "" ) {
+                document.getElementById("passworderror").innerHTML = ("<b> This field must be filled and Password must contain numbers only</b>")
+                return false;
+            } 
+            if (upass.length < 8) {
+                document.getElementById("passworderror").innerHTML = ("<b> Your Password should not less than 8 numbers</b>")
+                return false;   
+            } 
+            if (upass.length > 10) {
+                document.getElementById("passworderror").innerHTML = ("<b> Your Password should not more than 10 numbers</b>")
+                return false;
+            }            
+            else {
+                document.getElementById("passworderror").innerHTML = ("")
+            }
+
+            let conpass = document.getElementById("confirmpassword").value
+            //console.log("conpass");
+            if (upass == conpass) {
+                document.getElementById("confirmpassworderror").innerHTML = ("")
+            } else {
+                document.getElementById("confirmpassworderror").innerHTML = ("<b>This is not same with password. So, This must be same with provided password</b>")
+            }
+
+            let uemail = document.getElementById("email").value
+            if (uemail == "") {
+                document.getElementById("emailerror").innerHTML = ("<b>Email address must be writen here.")
+            } else {
+                document.getElementById("emailerror").innerHTML = ("")
+            }
+
+            let unumber = document.getElementById("mobile").value
+            //console.log(unumber);
+            if (unumber == "" ) {
+                document.getElementById("phonenumbererror").innerHTML = ("<b>Please enter your phone number.</b>")
+                return false;
+            } 
+            if (unumber.length > 10 ) {
+                document.getElementById("phonenumbererror").innerHTML = ("<b>Phone number must not be more than 10 numbers.")
+                return false;
+            } 
+            if (unumber.length < 10) {
+                document.getElementById("phonenumbererror").innerHTML = ("<b>Phone number must be 10 numbers.")
+                return false;
+            } else {
+                document.getElementById.innerHTML = ("")
+            }
+        }   
+    </script>
+</body>
+</html>
