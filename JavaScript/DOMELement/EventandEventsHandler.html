@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and Events Handler</title>
+</head>
+<body>
+    <select name="" id="">
+        <option value="1">Kriva</option>
+        <option value="2">Hiral</option>
+    </select>
+    <h2>Key Board Event</h2>
+    <input type="text" class="" id="" placeholder="keydown" onkeydown="keyboardfunction(this)">
+    <input type="text" class="" id="" placeholder="keyup" onkeyup="keyboardfunction(this)">
+    <input type="text" class="" id="" placeholder="Keypress" onkeypress="keyboardfunction(this)">
+
+    <h2>Form Event</h2>
+    <input type="text" class="" id="" placeholder="onblur" onblur="formfunction(this)">
+    <input type="text" placeholder="onfocus" onfocus="formfunction(this)">
+    <form action="post"  onsubmit="onsubmitfunction(this)">
+        <input type="text" name="username">
+        <input type="submit" name="btn">
+    </form>
+    <script>
+        function keyboardfunction(a) {
+            console.log(a);
+            console.log(a.value)
+        }
+        function formfunction(b) {
+            console.log("Called Function");
+        }
+        function onsubmitfunction(c) {
+            event.preventDefault()
+            console.log("Called",c);
+            console.log("This called inside this property",this);
+        }
+    </script>
+</body>
+</html>

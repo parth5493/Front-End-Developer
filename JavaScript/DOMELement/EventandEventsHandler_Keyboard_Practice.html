@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener and Event Handler for Keyboard Practice</title>
+</head>
+<body>
+    <p>keydown : It will work one step down.</p>
+    <p>keyup : It will work parallelly.</p>
+    <p>keypress : It functions same like keydown.</p>
+    <input type="text" id="" name="" placeholder="keydown" onkeydown="keyboardfunction(this)">
+    <input type="text" id="" name="" placeholder="keyup" onkeyup="keyboardfunction(this)">
+    <input type="text" id="" name="" placeholder="Keypress" onkeypress="keyboardfunction(this)">
+
+    <script>
+        function keyboardfunction(e) {
+           // console.log(e);  
+            console.log(e.value);
+           // console.log(e.value.length);
+        }
+    </script>
+</body>
+</html>

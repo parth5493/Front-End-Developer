@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener and Event Handler for Form Practice</title>
+</head>
+<body>
+    <p>Onblur : It functions after we move from that element.</p>
+    <p>OnFocus : It functions when we click on that element.</p>
+    <p>Onsubmit : We have put onsubmit function in form element. When we submit, we might not able see functionality(event) as it
+        works in micro seconds. To prevent this functionality, we should use event.preventDefault()
+    </p>
+    <input type="text" id="" name="" placeholder="onblur" onblur="formfuncgtion(this)">
+    <input type="text" id="" name="" placeholder="onfocus" onfocus="formfuncgtion(this)">
+    <form action="post" onsubmit="onsubmitfuncgtion(this)">
+        <input type="text" name="username" placeholder="onsubmit">
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        function formfuncgtion(e) {
+            console.log(e);
+            console.log(e.value);
+            
+        }
+        function onsubmitfuncgtion(b) {
+            event.preventDefault()
+            console.log("called", b.value)
+            console.log("This called inside this property",this);
+        }
+    </script>
+</body>
+</html>

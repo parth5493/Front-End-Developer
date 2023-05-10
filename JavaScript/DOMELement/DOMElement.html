@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element</title>
+</head>
+<body>
+    <input type="text" name="username" class="username" id="u_name" placeholder="username">
+    <input type="email" name="username" class="username" id="u_name" placeholder="username">
+    <input type="password" name="password" class="pass" placeholder="password">
+    <input type="button" value="Click" onclick="getdata()" name="btn" class="btn" id="button">
+
+    <script>
+        function getdata() {
+            let uname = document.getElementById("u_name")
+            console.log(uname);
+            console.log(uname.value);
+ 
+            let upass = document.getElementsByClassName("pass") //HTML Collection
+            console.log(upass);
+            console.log(upass[0].value);
+
+            let uspass = document.getElementsByTagName("input") // HTML Collection
+            console.log(uspass);
+            console.log(uspass[1].value);
+
+            let usname = document.getElementsByName("username") // NodeList
+            console.log(usname);
+            console.log(usname[0].value); 
+
+            let usename = document.querySelector(".username")
+            console.log(uname);
+            console.log(uname.value);
+
+            let username = document.querySelectorAll(".username")
+            console.log(uname);
+            console.log(uname[0].value);
+            console.log(uname[1].value);
+        }
+    </script>
+</body>
+</html>
