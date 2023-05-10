@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Practice</title>
+</head>
+    <style>
+        .same_class{
+            font-size: 20px;
+        }
+        .orange{
+            background-color: orangered;
+            text-align: center;
+        }
+        .white{
+            background-color: white;
+            color: blue;
+            text-align: center;
+        }
+        .green{
+            background-color: green;
+            text-align: center;
+        }
+    </style>
+<body>
+    <div class="container same_class">
+        <p class="same_class orange" id="1">Kriva</p>
+        <p class="same_class white" id="2">Jenny</p>
+        <p class="same_class green" id="3">Hiral</p>
+    </div>
+
+    <button id="toggle" onclick="togglefunction()">Toggle</button>
+
+    <script>
+        function togglefunction() {
+            //console.log("Called Toggle");
+            let toggle = document.getElementsByClassName("same_class")
+            //console.log(toggle);
+            let one = document.getElementById("1").classList
+            console.log(one);
+            let two = document.getElementById("2").classList
+            let three = document.getElementById("3").classList
+
+            if (one.length == 2) {
+               console.log("Called inside if");
+               one.remove("orange")
+               two.remove("white")
+               three.remove("green")
+               
+            } else {
+                //console.log("Called inside else");
+                one.add("orange")
+                two.add("white")
+                three.add("green")
+            }
+        }
+    </script>
+</body>
+</html>

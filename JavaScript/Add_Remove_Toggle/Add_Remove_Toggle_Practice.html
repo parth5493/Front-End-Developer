@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Remove Toggle Practice</title>
+    <style>
+        .style{
+            background-color: brown;
+            color: darkolivegreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Remove Toggle Practice</h1>
+    <h2>.classList : It is read only property. It is allow us to return CSS property in form of array.
+        We can add, remove, replace and toggle with this property. 
+    </h2>
+
+
+    <p class="custom_para" id="custom_para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Sit ab earum eos debitis nesciunt quam rem dolorum ratione. 
+        Assumenda expedita odio corporis temporibus obcaecati architecto nisi consectetur autem, veritatis fuga?
+    </p>
+
+    <button id="add_class" value="Add Class">Add Class</button>
+    <button id="remove_class" value="Remove Class">Remove Class</button>
+    <button id="toggle" onclick="togglefunction()">Toggle Class</button>
+
+    <p id="change_element">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Nulla doloremque nobis possimus, corrupti quia dolorem vero, 
+        reiciendis ut corporis voluptatibus sunt, officia fugit delectus voluptate ullam tenetur?
+         Unde, expedita maiores.</p>
+    
+    <button id="change_ele">Change Element</button>
+
+    <script>
+        document.getElementById("add_class").addEventListener("click", function () {
+           // console.log("Called add Class");
+
+           let add_style = document.getElementById("custom_para")
+          // console.log(add_style);
+           //console.log(add_style.classList);
+           add_style.classList.add("style")
+        })
+
+        document.getElementById("remove_class").addEventListener("click", function () {
+            //console.log("Called Remove Class");
+            
+            let remove_style = document.getElementById("custom_para")
+            //console.log(remove_style);
+            //console.log(remove_style.classList);
+            remove_style.classList.remove("style")
+        })
+
+        document.getElementById("change_ele").addEventListener("click", function () {
+            //console.log("Called Change Element");
+
+            let change = document.getElementById("change_element")
+            //console.log(change);
+
+           // change.innerHTML = "<h2>Something</h2>"
+              change.innerText = "Kriva"
+
+        })
+
+        function togglefunction() {
+            let toggle = document.getElementById("custom_para").classList
+            //console.log(toggle);
+            console.log(toggle.length);
+
+            if (toggle.length == 2) {
+               // console.log("Called inside if");
+                toggle.remove("style")
+            } else {
+               // console.log("Called inside else");
+                toggle.add("style")
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
