@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username">
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      
+      
+     <script>
+      
+      const form = document.querySelector("form");
+      const userNameInput = document.getElementById("username");
+      
+      // function to validate the user name
+      function validateUserName() {
+        const userNameValue = userNameInput.value.trim();
+        const messageSpan = document.createElement("span");
+        messageSpan.classList.add("error-message");
+      
+        // add error message if user name is invalid
+        if (userNameValue === "") {
+          messageSpan.textContent = "Username is required";
+          userNameInput.insertAdjacentHTML("afterend", messageSpan.outerHTML);
+        } else if (userNameValue.length < 3) {
+          messageSpan.textContent = "Username must be at least 3 characters long";
+          userNameInput.insertAdjacentHTML("afterend", messageSpan.outerHTML);
+        } else {
+          // if user name is valid, remove error message if exists
+          const existingMessage = userNameInput.nextElementSibling;
+          if (existingMessage && existingMessage.classList.contains("error-message")) {
+            existingMessage.remove();
+          }
+        }
+      }
+      
+      // validate on input
+      userNameInput.addEventListener("input", validateUserName);
+      
+      // validate on form submission
+      form.addEventListener("submit", function(event) {
+        validateUserName();
+        event.preventDefault(); // prevent form submission if there is an error message
+      });
+    </script>
+</body>
+</html>

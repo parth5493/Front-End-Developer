@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation With Creating Element</title>
+</head>
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td><input type="text" name="username" id="username" onblur="getfunction(this)" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" id="password" onblur="getfunction(this)" required></td>
+            </tr>
+            <tr>
+                <td><label for="confirmpassword">Confirm Password</label></td>
+                <td><input type="password" name="confirmpassword" id="confirmpassword" onblur="getfunction(this)" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile Number</label></td>
+                <td><input type="tel" name="mobile" id="mobile" onblur="getfunction(this)" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="btn" id="btn"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function getfunction(inputdata) {
+           let Spantag = document.createElement("span")
+           Spantag.innerHTML = "This Field must be filled."
+            console.log(Spantag);
+            if (inputdata.value == "") {
+                //console.log("inside if");
+                if (inputdata.nextSibling == null) {
+                    inputdata.parentNode.appendChild(Spantag)
+                }
+            } else {
+                 console.log("inside main else");
+                if (inputdata.nextSibling != null) {
+                    if (inputdata.nextSibling.nodeName == "SPAN") {
+                        inputdata.nextSibling.remove() 
+                    }
+                }
+               
+               
+            }
+
+        }
+    </script>
+</body>
+</html>
