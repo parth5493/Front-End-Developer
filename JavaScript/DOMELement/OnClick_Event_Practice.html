@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnClick Event Practice</title>
+</head>
+<body>
+    <p>ID is a unique. So, we get direct value by using getElementById method.</p>
+    <p>We get HTML collection by using getElementsByClassName and getElementsByTagName methods. 
+        We use index number in HTMLCOllection to check value of element.</p>
+    <p>What is HTML Collection? - It is collection of document Element. It receives like array.</p>
+    <p>We get NodeList by using getElementsByName method. It receives like array.</p>
+    <p>NodeList : It is collection of document nodes. E.g element nodes, attribute node and text node.</p>
+    <p>querySelector = It is same like CSS selector. We use <b>.</b> for classname and <b>#</b> for id.</p>
+    <p>querySelectorAll = We are using this method when we have same name multiple class. We receives output as a NodeList. </p>
+    <input type="text" name="username" id="username" class="username" placeholder="username">
+    <input type="text" name="username2" id="username2" class="username" placeholder="username2">
+    <input type="password" name="password" id="password" class="password" placeholder="password">
+    <input type="button" value="Click" id="btn" class="btn" onclick="onclickdata()">
+
+    <script>
+        function onclickdata() {
+            /*let u_name = document.getElementById("username")
+            console.log(u_name);
+            console.log(u_name.value);*/
+
+            /*let u_name2 = document.getElementsByClassName("username")
+            console.log(u_name2);
+            console.log(u_name2[0].value); */
+
+           /* let u_name3 = document.getElementsByTagName("input")
+            console.log(u_name3);
+            console.log(u_name3[0].value);
+            console.log(u_name3[1].value);
+            console.log(u_name3[2].value);*/
+
+            /*let u_pass = document.getElementsByName("password")
+            console.log(u_pass);
+            console.log(u_pass[0].value);*/
+
+            /*let u_pass2 = document.querySelector(".username")
+            console.log(u_pass2);
+            console.log(u_pass2.value);*/
+
+            let u_pass3 = document.querySelectorAll(".username")
+            console.log(u_pass3);
+            console.log(u_pass3[0].value);
+            console.log(u_pass3[1].value);
+
+        }
+    </script>
+</body>
+</html>
