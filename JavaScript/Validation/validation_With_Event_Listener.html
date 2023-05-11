@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation With Creating Element</title>
+</head>
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td><input type="text" name="username" id="username" class="thisrequired"  required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" id="password" class="thisrequired" required></td>
+            </tr>
+            <tr>
+                <td><label for="confirmpassword">Confirm Password</label></td>
+                <td><input type="password" name="confirmpassword" id="confirmpassword" class="thisrequired"  required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile Number</label></td>
+                <td><input type="tel" name="mobile" id="mobile" class="thisrequired" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="btn" id="btn"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+
+        let inputdata = document.getElementsByClassName("thisrequired")
+        //console.log(inputdata);
+
+        for (let index = 0; index < inputdata.length; index++) {
+           // console.log(inputdata[index]);
+           inputdata[index].addEventListener("blur", (event) => {
+            //console.log(inputdata[index]);
+            let Spantag = document.createElement("SPAN");
+            Spantag.innerHTML = "This Field must be filled.";
+            //console.log(Spantag);
+            if (inputdata[index].value == "") {
+                //console.log("inside if");
+                if (inputdata[index].nextSibling == null) {
+                    inputdata[index].parentNode.appendChild(Spantag)
+                }
+            } else {
+                 //console.log("inside main else");
+                if (inputdata[index].nextSibling != null) {
+                    if (inputdata[index].nextSibling.nodeName == "SPAN") {
+                        inputdata[index].nextSibling.remove() 
+                    }
+                }
+               
+               
+            }
+           });
+            
+        }
+
+    </script>
+</body>
+</html>

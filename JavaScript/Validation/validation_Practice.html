@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Practice</title>
+</head>
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td><input type="text" name="username" id="username" onblur="getfunction(this, 'usernameerror')"> 
+                <span id="usernameerror"></span> 
+                </td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" id="password" onblur="getfunction(this, 'passworderror')">
+                <span id="passworderror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="conpassword">Confirm Password</label></td>
+                <td><input type="password" name="conpassword" id="conpassword" onblur="getfunction(this, 'conpassworderror')">
+                <span id="conpassworderror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address</label></td>
+                <td><input type="email" name="email" id="email" required> </td>
+            </tr>
+            <tr>
+                <td><label for="mobilenumber">Phone Number</label></td>
+                <td><input type="tel" name="mobilenumber" id="mobilenumber" onblur="getfunction(this, 'mobilenumbererror')">
+                <span id="mobilenumbererror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="btn" id="btn"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function getfunction(e, spanid) {
+            
+            //console.log("Called function");
+            let abc = e.value
+
+            if (abc == "") {
+               // console.log("Called inside if");
+               document.getElementById(spanid).innerHTML = ("This Field must be filled")
+            } else {
+              //  console.log("Called inside else");
+              document.getElementById(spanid).innerHTML = ("")
+            }
+        }
+    </script>
+</body>
+</html>
