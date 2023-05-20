@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add_Remove_Toggle_Practice</title>
+</head>
+    <style>
+        .colour{
+            background-color: teal;
+            color: brown;
+        }
+    </style>
+<body>
+    <p class="cust-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Eligendi tempore nostrum magnam, doloribus, iusto mollitia
+         doloremque soluta ullam sapiente excepturi est itaque error consectetur sed 
+         recusandae nulla omnis, quis quaerat!</p>
+
+    <button id="add">Add class</button>
+    <button id="remove">Remove Class</button>
+    <button id="toggle">Toggle</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    
+    <script>
+        $("#add").on("click", function () {
+            //console.log("Called");
+            $(".cust-para").addClass("colour");
+        })
+
+        $("#remove").on("click", function () {
+           // console.log("Called");
+            $(".cust-para").removeClass("colour")
+        })
+
+        $("#toggle").on("click", function () {
+            //console.log("Called");
+            $(".cust-para").toggleClass("colour")
+        })
+    </script>
+
+</body>
+</html>
