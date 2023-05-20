@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        .change-box{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">Welcome</p>
+    <p id="p2">Learn and Explore</p>
+    <input id="input1" type="text" placeholder="jQuery is powerful!">
+    <p id="p3">Welocome to Text</p>
+    <div id="div" class="box"></div>
+    <p></p>
+    <button id="change-text">Change Text</button>
+    <button id="change-html">Change HTML</button>
+    <button id="change-value">Change Value</button>
+    <button id="change-alignment">Change Alignment</button>
+    <button id="change-shape">Change Shape</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+        $("#change-text").on("click", function () {
+           // console.log("called");
+           $("#p1").text("Texting Text")
+        })
+
+        $("#change-html").on("click", function () {
+            //console.log("called");
+            $("#p2").html("<h2>Enrich your Knowledge</h2>")
+        })
+
+        $("#change-value").on("click", function () {
+            //console.log("called");
+            $("#input1").val("jQueary with Parth")
+        })
+
+        $("#change-alignment").on("click", function () {
+            //console.log("Called");
+            $("#p3").css("textAlign", "right")
+        })
+
+        $("#change-shape").on("click", function () {
+            $("#div").addClass("change-box")
+        })
+    </script>
+</body>
+</html>
