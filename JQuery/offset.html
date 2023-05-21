@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OffSet Practice</title>
+    <style>
+        .box{
+            width: 30px;
+            height: 30px;
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="offset">Result : </div>
+
+    <div>
+        <a href="">Click Here</a>
+    </div>
+    
+    <div class="box"></div>
+
+    <div>Kriva</div>
+
+    <div class="btn">
+        <button>Submit</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+        $("*", document.body).click(function (event) {
+
+          // console.log("Called", $(this));
+
+           event.preventDefault()
+           event.stopPropagation()
+
+           let offset_result = $(this).offset()
+           console.log(offset_result);
+
+           $(".offset").html(this.tagName + "Cordinates are ("+ offset_result.left +", "+ offset_result.top +")")
+            
+        })
+    </script>
+</body>
+</html>

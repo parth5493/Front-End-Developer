@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Height Practice</title>
+    
+        <style>
+            div{
+                width: 80px;
+                height: 80px;
+                background-color: palevioletred;
+                display: inline-block;
+                cursor: pointer;
+                margin: 30px;
+            }
+            .mod{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>k</div>
+        <div>k</div>
+        <div>k</div>
+        <div>k</div>
+        <div>k</div>
+    
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> 
+
+        <script>
+            let modheight = 70;
+
+            $("div").one("click", function () {
+                $(this).innerHeight(modheight).addClass("mod")
+
+                modheight -= 10;
+            })
+        </script>
+    </body>
+    </html>
