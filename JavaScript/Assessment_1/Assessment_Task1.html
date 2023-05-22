@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assessment 1</title>
+    <link rel="stylesheet" href="./Assessment_Task1.css">
+</head>
+<body class="bg">
+    <script>   
+    
+        let h1 = document.createElement("h1")
+        h1.innerHTML = "Parth's Restaurant Reservation Booking Form"
+        document.body.appendChild(h1)
+        h1.classList.add("h1")
+
+        let form = document.createElement("form")        
+
+        let table = document.createElement("table")
+        form.appendChild(table)
+
+        let tr0 = document.createElement("tr")
+        table.appendChild(tr0)
+
+        let td0 = document.createElement("td")
+        tr0.appendChild(td0)
+
+        let label0 = document.createElement("label")
+        label0.innerHTML = "<b>Choice of Booking:</b>"
+        td0.appendChild(label0)
+        label0.classList.add("label")
+
+        let select = document.createElement("select")
+        td0.append(select)
+
+        let option0 = document.createElement("option")
+        option0.setAttribute("value", "option0")
+        option0.innerText = ""
+        select.appendChild(option0)
+
+        let option1 = document.createElement("option")
+        option1.setAttribute("value", "option1")
+        option1.innerText = "Full Day Booking"
+        select.appendChild(option1)
+
+        let option2 = document.createElement("option")
+        option2.setAttribute("value", "option2")
+        option2.innerText = "Half Day Booking"
+        select.appendChild(option2)
+
+        let option3 = document.createElement("option")
+        option3.setAttribute("value", "option3")
+        option3.innerText = "Hourly Booking"
+        select.appendChild(option3)
+
+        select.addEventListener("change", function () {           
+        
+            if (this.value === "option1") {
+                //console.log("Called option 1");
+                    
+
+                    let op1_div = document.createElement("div")
+                    form.appendChild(op1_div)
+                    op1_div.classList.add("div")
+
+                    let op1 = document.createElement("label")
+                    op1.innerHTML ="<b>Select the Date of Full Day Booking:</b>"
+                    op1_div.appendChild(op1)
+
+                    let in1 = document.createElement("input")
+                    in1.setAttribute("type", "date")
+                    in1.setAttribute("name", "date")
+                    op1.appendChild(in1)
+                
+            } else if (this.value === "option2") {
+               // console.log("Called option 2");
+
+                    let op2_div = document.createElement("div")
+                    form.appendChild(op2_div)
+                    op2_div.classList.add("div")
+
+                    let op2 = document.createElement("label")
+                    op2.innerHTML ="<br><b>Select the Date of Half Day Booking:</b>"
+                    op2_div.appendChild(op2)
+
+                    let in2 = document.createElement("input")
+                    in2.setAttribute("type", "date")
+                    in2.setAttribute("name", "date")
+                    op2.appendChild(in2)
+
+                    let slot_half = document.createElement("label")
+                    slot_half.innerHTML = "<br><b>Slot Option:</b>"
+                    form.appendChild(slot_half)
+                    slot_half.classList.add("div")
+
+                    let select_half = document.createElement("select")
+                    slot_half.appendChild(select_half)
+
+                    let select_option0 = document.createElement("option")
+                    select_option0.setAttribute("value", "select_option0")
+                    select_option0.innerText = ""
+                    select_half.appendChild(select_option0)
+
+                    let select_option1 = document.createElement("option")
+                    select_option1.setAttribute("value", "select_option1")
+                    select_option1.innerText = "Breakfast"
+                    select_half.appendChild(select_option1)
+
+                    let select_option2 = document.createElement("option")
+                    select_option2.setAttribute("value", "select_option2")
+                    select_option2.innerText = "Lunch"
+                    select_half.appendChild(select_option2)
+
+                    let select_option3 = document.createElement("option")
+                    select_option3.setAttribute("value", "select_option3")
+                    select_option3.innerText = "Dinner"
+                    select_half.appendChild(select_option3)
+
+
+            }else if (this.value === "option3") {
+               // console.log("Called option 3");
+
+                    let op3_div = document.createElement("div")
+                    form.appendChild(op3_div)
+                    op3_div.classList.add("div")
+
+                    let op3 = document.createElement("label")
+                    op3.innerHTML = "<br><b>Date and Time:"
+                    op3_div.appendChild(op3)
+                    
+                    let in2 = document.createElement("input")
+                    in2.setAttribute("type", "datetime-local")
+                    in2.setAttribute("name", "datetime")
+                    op3.appendChild(in2)
+            }
+        })
+
+        let tr1 = document.createElement("tr")
+        table.appendChild(tr1)
+
+        let td1 = document.createElement("td")
+        tr1.appendChild(td1)
+        //console.log(td1);
+        
+        let label1 = document.createElement("label");
+        label1.innerHTML = "<b>User Name:</b>"
+        td1.appendChild(label1)
+        label1.classList.add("label")
+        //console.log(label1);
+
+        let input1 = document.createElement("input")
+        input1.setAttribute("type","text")
+        input1.setAttribute("name", "name")
+        td1.appendChild(input1)
+        //console.log(input1);
+
+        let tr2 = document.createElement("tr")
+        table.appendChild(tr2)
+        
+        let td2 = document.createElement("td")
+        tr2.appendChild(td2)
+
+        let label2 = document.createElement("label")
+        label2.innerHTML = "<b><br>Mobile Number:</b>"
+        td2.appendChild(label2)
+        label2.classList.add("label")
+
+        let input2 = document.createElement("input")
+        input2.setAttribute("type", "tel" )
+        input2.setAttribute("name", "tel")
+        td2.appendChild(input2)
+
+        let tr3 = document.createElement("tr")
+        table.appendChild(tr3)
+
+        let td3 = document.createElement("td")
+        tr3.appendChild(td3)
+
+        let label3 = document.createElement("label")
+        label3.innerHTML = "<b><br>Email:</b>"
+        td3.appendChild(label3)
+        label3.classList.add("label")
+
+        let input3 = document.createElement("input")
+        input3.setAttribute("type", "email")
+        input3.setAttribute("name", "email")
+        td3.appendChild(input3)
+
+        let tr4 = document.createElement("tr")
+        table.appendChild(tr4)
+
+        let td4 = document.createElement("td")
+        tr4.appendChild(td4)
+
+        let label4 = document.createElement("label")
+        label4.innerHTML = "<b><br>No of Person:</b>"
+        td4.appendChild(label4)
+        label4.classList.add("label")
+
+        let input4 = document.createElement("input")
+        input4.setAttribute("type", "number")
+        input4.setAttribute("name", "number")
+        td4.appendChild(input4)
+
+        let tr5 = document.createElement("tr")
+        table.appendChild(tr5)
+
+        let td5 = document.createElement("td")
+        tr5.appendChild(td5)
+
+        let label5 = document.createElement("label")
+        label5.innerHTML = "<b><br>Date:</b>"
+        td5.appendChild(label5)
+        label5.classList.add("label")
+
+        let input5 = document.createElement("input")
+        input5.setAttribute("type", "date")
+        input5.setAttribute("name", "date")
+        td5.appendChild(input5)
+
+        let tr6 = document.createElement("tr")
+        table.appendChild(tr6)
+
+        let td6 = document.createElement("td")
+        tr6.appendChild(td6)
+
+        let label6 = document.createElement("label")
+        label6.innerHTML = "<b><br>Time:</b>"
+        td6.appendChild(label6)
+        label6.classList.add("label")
+
+        let input6 = document.createElement("input")
+        input6.setAttribute("type", "time")
+        input6.setAttribute("name", "time")
+        td6.appendChild(input6)  
+        
+        let tr7 = document.createElement("tr")
+        table.appendChild(tr7)
+
+        let td7 = document.createElement("td")
+        tr7.appendChild(td7)
+
+        let label7 = document.createElement("label")
+        label7.innerHTML = "<br><b>Slot:</b>"
+        td7.appendChild(label7) 
+        label7.classList.add("label")       
+
+        let input7 = document.createElement("input")
+        input7.setAttribute("type", "time")
+        input7.setAttribute("name", "time")
+        td7.appendChild(input7)
+
+        document.body.appendChild(form);
+    </script>
+</body>
+</html>
