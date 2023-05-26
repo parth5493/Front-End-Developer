@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Practice</title>
+</head>
+<body>
+    <p>Kriva</p>
+    <p>Hiral</p>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+        let p = $("p").first()
+        //console.log(p);
+
+        let position = p.position()
+        console.log(position);
+
+        $("p").last().text("left postion is" + position.left +  ", top position is" + position.top) 
+        //It replaces last p element means Hiral with left position is_ top position is _. 
+
+
+    </script>
+</body>
+</html>

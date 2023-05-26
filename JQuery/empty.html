@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detach Practice</title>
+</head>
+<body>
+    <h2>Kriva</h2>
+    <p>Hiral</p>
+    <p>Jenny</p>
+
+    <button class="detach">Empty</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+       // document.getElementsByTagName("button").addEventListiner("click", function name(params) {})
+
+       $(".detach").click(function () {
+            $("p").empty()  // It empty all contents of p elements.
+       })
+    </script>
+
+</body>
+</html>
