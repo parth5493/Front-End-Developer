@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disable Practice</title>
+</head>
+<body>
+    <input type="checkbox" checked="checked">
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox" checked="checked">
+
+    <button id="checkall">Check All</button>
+    <button id="uncheck">Uncheck All</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("checkall").addEventListener("click", function () {
+            $("input").prop("checked", "true")
+            $("input[type='checkbox']").prop({
+                disabled: true
+            })
+        })
+
+        document.getElementById("uncheck").addEventListener("click", function () {
+            $("input").prop("checked", false)
+
+            $("input[type='checkbox']").prop({
+                disabled: false
+            })
+        })
+    </script>
+
+</body>
+</html>
