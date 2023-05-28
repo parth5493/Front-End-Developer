@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Class Remove Class</title>
+    <style>
+        .div{
+            height: 150px;
+            width: 150px;
+            position: relative;
+            text-align: center;
+            display: flex;
+            top: 20px;
+            border: 1px solid;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .box{
+            background-color: orangered;
+        }
+        button{
+            background-color: rgb(19, 167, 19);
+            padding: 10px 20px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            column-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>The addClass() and removeClass() are using to add and remove css property.</p>
+
+    <p>$("selector").addClass(class_name)</p>
+    <p>$("selector").removeClass(class_name)</p>
+
+    <div class="container">
+        <button id="add">Add Class</button>
+        <button id="remove">Remove Class</button>
+    </div>
+
+    <div class="div box">Parth Patel</div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+        $("#remove").on("click", function () {
+            $(".div").removeClass("box")
+        })
+        $("#add").on("click", function () {
+            $(".div").addClass("box")
+        })
+    </script>
+</body>
+</html>

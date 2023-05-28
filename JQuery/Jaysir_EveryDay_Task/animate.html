@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Task</title>
+
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+        }
+        button{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+
+    <button>Click me</button>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div").animate({
+                width: "500px"
+            })             
+            })
+            $("button").click(function () {
+                $("div").animate({
+                    height: "500px"
+                })
+            })
+            
+        })
+    </script>
+</body>
+</html>

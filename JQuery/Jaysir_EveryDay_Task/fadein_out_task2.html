@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade In and Fade Out Practice Task 2</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        h2{
+            color: rgb(65, 36, 25);
+            text-align: center;
+        }
+        #oranged{
+            width: 50px;
+            height: 50px;
+            background-color: orangered;
+            margin: 20px;
+        }
+        #white{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            margin: 20px;
+        }
+        #green{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            margin: 20px;
+        }
+    </style>  
+</head>
+<body>
+    <h2>Parth Patel</h2>
+
+    <h3>Demostrate fadeOut() with different parameters</h3>
+
+    <ul>
+        <li>fadeIn()</li>
+        <li>fadeOut()</li>
+    </ul>
+
+    <button id="btn">Click to fade in boxes</button>
+
+    <div class="container">
+        <div id="oranged"></div>
+        <div id="white"></div>
+        <div id="green"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+        $("#btn").on("click", function () {
+            $("#oranged").fadeOut("fast")
+            $("#white").fadeOut("slow")
+            $("#green").fadeOut(3000)
+        })
+    </script>
+</body>
+</html>

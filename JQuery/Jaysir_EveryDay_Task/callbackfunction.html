@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack Function</title>
+    <style>
+        h2{
+          text-align: center;
+          border: 1px solid blue; 
+          padding: 40px;  
+        }
+        button{
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Parth Patel</h2>
+    <button>Show it</button>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+        $("button").click(function () {
+            alert("We didn't have callbackfunction().")
+            $("h2").slideToggle("slow")
+        })
+    </script>
+</body>
+</html>

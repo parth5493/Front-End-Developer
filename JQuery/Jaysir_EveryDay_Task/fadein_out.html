@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade In and Fade Out Practice</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        h2{
+            color: rgb(65, 36, 25);
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            column-gap: 10px;
+            margin: 20px;
+        }
+        #oranged{
+            width: 50px;
+            height: 50px;
+            background-color: orangered;
+        }
+        #white{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+        #green{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            column-gap: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Parth Patel</h2>
+    
+
+    <div class="container">
+        <div id="oranged"></div>
+        <div id="white"></div>
+        <div id="green"></div>
+    </div>
+
+    <div class="btn">
+        <button id="fadein">Fade In</button>
+        <button id="fadeout">Fade out</button>
+    </div>  
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+        $("#fadeout").on("click", function () {
+            $(".container").fadeOut("slow", function () { // It fades out container call div
+                alert("fadeOut Function called off")// It provides alert after fade out
+            })
+        })
+        $("#fadein").on("click", function () {
+            $(".container").fadeIn("slow", function () { // It fades in container call div
+                alert("fadeIn Function called off") // It provides alert after fade in
+            })
+        })
+    </script>
+</body>
+</html>
