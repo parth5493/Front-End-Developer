@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nullish Operator</title>
+</head>
+<body>
+
+    <h2>Nullish Coalescing Operator</h2>
+
+    <p>The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand 
+        when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.</p>
+    <script>
+        let a = null ?? 42
+        //console.log(a);
+
+        let b = undefined ?? "Kriva"
+        //console.log(b);
+
+        let c = "Kriva" ?? null
+        //console.log(c);
+
+        let d = null
+        let e = ""
+        let f = 86
+
+        let val_d = d ?? "null value on left-side"
+        console.log(val_d) 
+
+        let val_e = e ?? "strig value on left-side"
+        console.log(val_e);
+
+        let val_f = 86 ?? "number on left-side"
+        console.log(val_f);
+    </script>
+</body>
+</html>
