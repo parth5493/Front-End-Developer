@@ -1,0 +1,882 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1150px;
+    margin: 0 auto;
+}
+.sec1_bg{
+    background-color: #e9e7e7;
+    overflow: hidden;
+    padding: 0 0 150px 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.home_jsc{
+    justify-content: space-between;
+}
+.header{
+    padding: 50px 0 0 0;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+.home_links ul li{
+    display: inline-block;
+    padding: 0 30px 0 30px;
+}
+.home_links ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+}
+.home_contact ul li{
+    list-style: none;
+}
+.home_contact ul li a button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    padding: 5px 30px;
+    border: solid 2px black;
+    border-radius: 5px;
+    margin: 0 20px 0 0;
+}
+.home_cart2{
+    margin: 80px 0 0 0;
+}
+.col-40{
+    width: 40%;
+}
+.col-60{
+    width: 60%;
+}
+.home_cart_jsc{
+    justify-content: space-between;
+}
+.home_head h1{
+    font-size: 60px;
+    width: 70%;
+    margin: 0 0 0 30px;
+}
+.home_p p{
+    font-size: 15px;
+    width: 70%;
+    margin: 20px 0 0 30px;
+}
+.home_btn ul li{
+    list-style: none;
+}
+.home_btn ul li a button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    padding: 5px 30px;
+    background-color: black;
+    border: solid 2px black;
+    margin: 30px 0 0 30px;
+    border-radius: 5px;
+}
+.home_img img{
+    display: block;
+    margin: 0 40px 0 0;
+}
+.shape_re{
+    position: relative;
+}
+.shape_1{
+    position: absolute;
+    left: -300px;
+    top: 230px;
+}
+.shape_2{
+    position: absolute;
+    right: -50px;
+    top: 400px;
+}
+.sec2_bg{
+    background-color: black;
+    padding: 0 0 50px 0;
+    overflow: hidden;
+}
+.sec2_text div h2{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+}
+.sec2_text div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+ul li{
+    list-style: none;
+}
+.sec2_btn{
+    margin: 25px 0 0 0;
+}
+.sec2_text ul li a button{
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 8px 50px;
+    display: block;
+    margin: 0 auto;    
+}
+.sec2_re{
+    position: relative;
+}
+.sec2_shape{
+    position: absolute;
+    top: 40px;
+    left: -150px;
+}
+.sec2_shape2{
+    position: absolute;
+    top: 200px;
+    right: -100px;
+}
+.sec3_bg{
+    background-color: #e9e7e7;
+    overflow: hidden;
+}
+.sec3_jsc{
+    justify-content: space-around;
+}
+.sec3_cart{
+    padding: 150px 0 150px 0;
+}
+.col-30{
+    width: 30%;
+}
+.sec3_img2{
+    margin: 20px 0 0 0;
+}
+.sec3_h2 h2{
+    width: 50%;
+    padding: 15px 0 0 0;
+}
+.sec3_p p{
+    padding: 20px 0 0 0;
+}
+.sec3_re{
+    position: relative;
+}
+.sec3_shape1{
+    position: absolute;
+    top: -10px;
+    left: -90px;
+}
+.sec3_shape2{
+    position: absolute;
+    top: 320px;
+    right: -40px;
+}
+.guide{
+    background-color: #e9e7e7;
+    padding: 0 0 150px 0;
+    overflow: hidden;
+}
+.guide_text{
+    padding: 150px 0 0 0;
+}
+.guide_text img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+.guide_text div h2{
+    font-size: 70px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px 0 0 80px;
+}
+.guide_text div p{
+    font-size: 16px;
+    font-weight: 600;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px 0 0 150px;
+}
+.guide_extra{
+    padding: 0 0 50px 0;
+}
+.guide_re{
+    position: relative;
+}
+.guide_shape1{
+    position: absolute;
+    top: 430px;
+    left: 150px;
+}
+.guide_shape2 img{
+    width: 600px;
+    height: 600px;
+}
+.guide_shape2{
+    position: absolute;
+    top: 30px;
+    right: -250px;
+}
+.guide_sec2_jsc{
+    justify-content: space-between;
+}
+.guide_sec2{
+    background-color: #e9e7e7;
+    padding: 50px 0 30px 0;
+}
+.cart_img1 img{
+    width: 400px;
+    height: 700px;
+}
+.guide_sub_jsc{
+    justify-content: space-evenly;
+    padding: 80px 0 0 0;
+}
+.col-40_sub{
+    width: 30%;
+}
+.col-60_sub{
+    width: 70%;
+}
+.sub_cart_h2{
+    font-size: 20px;
+    width: 90%;
+    word-spacing: 3px;
+}
+.sub_cart_p1 p{
+    width: 65%;
+}
+.sub_cart_p2 p{
+    width: 65%;
+    margin: 20px 0 0 0;
+}
+.guide_sec2_re{
+    position: relative;
+}
+.guide_sec2_shape1{
+    position: absolute;
+    top: 250px;
+    left: 65px;
+}
+.guide_sec2_shape2{
+    position: absolute;
+    top: 680px;
+    right: 250px;
+}
+.flight_bg{
+    background-color: black;
+    padding: 100px 0 150px 0;
+    overflow: hidden;
+}
+.flight_jsc{
+    justify-content: space-around;
+}
+.flight_h2 h2{
+    color: white;
+    font-size: 40px;
+    width: 80%;
+}
+.flight_h3 h3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 70px 0 0 0;
+}
+.flight_p p{
+    color: white;
+    width: 70%;
+    margin: 10px 0 0 0;
+}
+.flight_img img{
+    width: 789px;
+    height: 550px;
+}
+.flight_re{
+    position: relative;
+}
+.flight_ab{
+    position: absolute;
+    top: 670px;
+    left: -220px;
+}
+.flight_sec2_bg{
+    background-color: #e9e7e7;
+    padding: 100px 0 120px 0;
+}
+.flight_sec2_jsc{
+    justify-content: space-between;
+}
+.flight_sec2_row{
+    display: flex;
+    justify-content: space-around;
+}
+.flight_sec2_h2{
+    font-size: 40px;
+    width: 80%;
+    padding: 0 0 50px 0;
+}
+hr{
+   border-top: solid 1px black;
+}
+.flight_sec2_align{
+    margin: 10px 0;
+}
+.hr2 hr{
+    border-top: solid 2px black;
+ }
+ .hr3 hr{
+    border-top: solid 2px black;
+ }
+ .flight_sec2_img2 img{
+    width: 300px;
+    height: 370px;
+ }
+ .about_bg{
+    background-color: #e9e7e7;
+    padding: 150px 0 100px 0;
+    overflow: hidden;
+ }
+ .about_text h2{
+    font-size: 50px;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+ }
+ .about_jsc{
+    justify-content: space-around;
+ }
+ .about-sub_cart{
+    border: solid 2px black;
+    padding: 80px 0;
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+ }
+ .personal_icon{
+    text-align: center;
+ }
+ .personal_icon i{
+    font-size: 70px;
+ }
+ .cart_h3 h3{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px 0 0 0;
+ }
+ .cart_p p{
+   width: 85%; 
+   margin: 0 auto;
+   padding: 15px 0 0 0;
+ }
+ .about_re{
+    position: relative;
+ }
+ .about_shape1{
+    position: absolute;
+    top: 80px;
+    left: -60px;
+ }
+ .about_shape2{
+    position: absolute;
+    top: 650px;
+    right: -250px;
+ }
+ .contact_bg{
+    background-color: #e9e7e7;
+    padding: 100px 0 150px 0;
+ }
+ .contact_jsc{
+    justify-content: space-around;
+ }
+ .contact_h2 h2{
+    font-size: 55px;
+    margin: 0 0 0 10px;
+ }
+ table{
+    border-spacing: 15px;
+ }
+ .tr_align td input{
+    padding: 5px 60px 5px 10px;
+    border: solid 2px black;
+    border-radius: 5px;
+ }
+ .tr_align2 td textarea{
+    border: solid 2px black;
+    border-radius: 5px;
+ }
+ tr td button{
+    color: white;
+    background-color: black;
+    padding: 10px 80px 10px 80px;
+    border: solid 2px black;
+    border-radius: 5px;
+    margin: 20px 0 0 0;
+ }
+ .contact_img img{
+    width: 550px;
+    height: 450px;
+ }
+ .foot_bg{
+    background-color: #c4c4c4;
+    padding: 50px 0 150px 0;
+    overflow: hidden;
+ }
+ .foot_jsc{
+    justify-content: space-around;
+ }
+ .foot_h2{
+    font-size: 30px;
+    width: 50%;
+ }
+ .col-15{
+    width: 15%;
+ }
+ ul li a{
+    color: black;
+    padding: 10px 0 0 0;
+ }
+ ul li{
+    padding: 15px 0 0 0;
+ }
+ .foot_links_align{
+    margin: 20px 0 0 0;
+ }
+ .foot_text p{
+    text-align: center;
+    margin: 90px 0 0 0;
+ }
+ .foot_re{
+    position: relative;
+ }
+ .foot_shape{
+    position: absolute;
+    top: 250px;
+    left: -450px;
+ }
+@media(min-width:576px){
+    .container{
+        width: 550px;
+    }    
+    .col-40{
+        width: 100%;
+    }
+    .col-60{
+        width: 100%;
+    }
+    .home_img{
+        margin: 30px 0 0 30px;
+    }
+    .shape_1{
+        left: -350px;
+    }
+    .shape_2{
+        top: 900px;
+    }
+    .col-30{
+        width: 70%;
+        margin: 0 0 30px 0;
+    }
+    .sec3_shape2{
+        top: 1320px; 
+    }
+    .guide_shape1{
+        top: 800px;
+        left: 0px;
+    }
+    .guide_shape2{
+        top: 30px;
+        right: -350px;
+    }
+    .guide_text div p{
+        margin: 0 0px 0 0;
+    }
+    .cart_img1 img{
+        display: block;
+        margin: 0 auto;
+    }
+    .cart_img2{
+        padding: 20px 0 0 0;
+    }
+    .cart_img2 img{
+        display: block;
+        margin: 0 auto;
+    }
+    .guide_align{
+        margin: 0 0 0 80px;
+    } 
+    .guide_sec2_shape1{
+        top: 260px;
+        left: 145px;
+    }   
+    .guide_sec2_shape2{
+        top: 1410px;
+        right: 30px;
+    }
+    .flight_img img{
+        margin: 20px 0 0 0;
+    }
+    .flight_ab{
+        top: 1200px;
+        left: -220px;
+    }
+    .flight_sec2_img2 img{
+        display: block;
+        margin: 40px 0 0 120px;
+     }
+     .about_text h2{
+        width: 70%;
+     }
+     .about_shape1{
+        top: -5px;
+        left: -60px;
+     }
+     .about_shape2{
+        top: 1450px;
+     }
+     .contact_h2 h2{
+        text-align: center;
+     }
+     .conact_form{
+        padding: 0 0 0 150px;
+     } 
+     .col-15{
+        width: 30%;
+     }
+     .foot_shape{
+        top: 390px;
+        left: -450px;
+     }
+}
+@media(min-width:768px){
+    .container{
+        width: 730px;
+    }
+    .col-40{
+        width: 80%;
+    }
+    .col-60{
+        width: 50%;
+    }
+    .home_img{
+        margin: 30px 0 0 30px;
+    }
+    .shape_1{
+        left: -350px;
+    }
+    .shape_2{
+        top: 800px;
+    }
+    .col-30{
+        width: 70%;
+        margin: 0 0 30px 0;
+    }
+    .sec3_shape2{
+        top: 1320px; 
+    }
+    .guide_shape1{
+        top: 700px;
+        left: 0px;
+    }
+    .guide_shape2{
+        top: 30px;
+        right: -400px;
+    }
+    .guide_text div p{
+        margin: 0 0 0 70px;
+    }
+    .cart_img1 img{
+        display: block;
+        margin: 0 0 0 150px;
+    }
+    .cart_img2{
+        padding: 20px 0 0 0;
+    }
+    .cart_img2 img{
+        display: block;
+        margin: 0 0 0 140px;
+    }
+    .guide_align{
+        margin: 0 0 0 80px;
+    }
+    .guide_sec2_shape1{
+        left: 150px;
+    }
+    .guide_sec2_shape2{
+        top: 1540px;
+        right: 30px;
+    }
+    .guide_sub_jsc{
+        justify-content: space-around;
+    }
+    .col-40_sub{
+        width: 100%;
+        padding: 0 auto;
+        margin: 0 0 0 60px;
+    }
+    .col-60_sub{
+        width: 100%;
+        padding: 0 auto;
+        margin: 30px 0 0 60px;
+    }
+    .sub_cart_h2{
+        width: 100%;
+    }
+    .sub_cart_p1 p{
+        width: 100%;
+    }
+    .sub_cart_p2 p{
+        width: 100%;
+    }
+    .guide_sec2_shape1{
+        top: 260px;
+        left: 165px;
+    }
+    .guide_sec2_shape2{
+        top: 1570px;
+        right: 30px;
+    }
+    .flight_ab{
+        top: 1150px;
+        left: -220px;
+    }
+    .col-60{
+        width: 100%;
+        margin: 0 0 0 50px;
+    }
+    .flight_sec2_img2 img{
+        display: block;
+        margin: 40px 0 0 150px;
+     }
+     .about_shape2{
+        top: 1380px;
+     }
+     .contact_img img{
+       display: block;
+       margin: 0 auto;
+     }
+}
+@media(min-width:992px){
+    .container{
+        width: 950px;
+    }
+    .col-40{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .col-60{
+        width: 60%;
+    }
+    .home_img{
+        margin: 30px 0 0 30px;
+    }
+    .shape_1{
+        left: -350px;
+    }
+    .shape_2{
+        top: 700px;
+    }
+    .col-30{
+        width: 40%;
+        margin: 0 0 30px 0;
+    }
+    .sec3_cart{
+        padding: 150px 0 100px 0;
+    }
+    .sec3_shape2{
+        top: 820px; 
+    }
+    .guide_shape1{
+        top: 550px;
+    }
+    .guide_shape2{
+        top: 30px;
+        right: -300px;
+    }
+    .guide_text div p{
+        margin: 0 0 0 100px;
+    }
+    .col-40_sub{
+        width: 100%;
+        padding: 0 auto;
+        margin: 0 0 0 60px;
+    }
+    .col-60_sub{
+        width: 100%;
+        padding: 0 auto;
+        margin: 30px 0 0 60px;
+    }
+    .sub_cart_h2{
+        width: 100%;
+    }
+    .sub_cart_p1 p{
+        width: 100%;
+    }
+    .sub_cart_p2 p{
+        width: 100%;
+    }
+    .guide_sec2_shape1{
+        top: 260px;
+        left: 140px;
+    }
+    .guide_sec2_shape2{
+        top: 1430px;
+        right: 10px;
+    }
+    .flight_ab{
+        top: 1050px;
+        left: -220px;
+    }
+    .flight_sec2_h2{
+        width: 100%;
+        margin: 0 0 0 60px;
+    }
+    .flight_sec2_sub_cart2{
+        margin: 0 0 0 120px;
+    }
+    .flight_sec2_img2 img{
+        display: block;
+        margin: 40px 0 0 150px;
+        padding: 0 0 0 80px;
+     }
+     .about_shape2{
+        top: 1000px;
+     }
+     .contact_h2 h2{
+        margin: 0 0 0 -40px;
+     }
+     .conact_form{
+        padding: 0 0 0 150px;
+        margin: 0 0 0 150px;
+     }
+     .col-15{
+        width: 15%;
+     }
+     .foot_shape{
+        top: 250px;
+        left: -450px;
+     }
+}
+@media(min-width:1200px){
+    .container{
+        width: 1150px;
+    }
+    .col-40{
+        width: 30%;
+    }
+    .col-60{
+        width: 50%;
+    }
+    .shape_1{
+        left: -300px;
+    }    
+    .shape_2{
+        top: 400px;
+    }
+    .col-30{
+        width: 30%;
+    }
+    .sec3_shape2{
+        top: 320px;
+        right: -40px;
+    }
+    .guide_shape1{
+        top: 450px;
+    }
+    .guide_shape2{
+        top: 30px;
+        right: -300px;
+    }
+    .guide_text div p{
+        margin: 0 auto;
+    }
+    .guide_sub_jsc{
+        justify-content: space-between;
+        padding: 0 0 0 0;
+    }
+    .col-40_sub{
+        width: 30%;
+    }
+    .col-60_sub{
+        width: 50%;
+    }
+    .sub_cart_h2{
+        font-size: 20px;
+        width: 100%;
+        word-spacing: 3px;
+        margin: 75px 0 0 0;
+    }
+    .sub_cart_p1 p{
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+    .sub_cart_p2 p{
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+    .guide_sec2_shape1{
+        top: 260px;
+        left: 215px;
+    }
+    .guide_sec2_shape2{
+        top: 680px;
+        right: 80px;
+    }
+    .flight_h2 h2{
+        color: white;
+        font-size: 40px;
+        width: 100%;
+    }
+    .flight_h3 h3{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 70px 0 0 0;
+    }
+    .flight_p p{
+        color: white;
+        width: 80%;
+        margin: 10px 0 0 0;
+    }
+    .flight_ab{
+        top: 700px;
+        left: -220px;
+    }
+    .flight_sec2_img2 img{
+        width: 300px;
+        height: 370px;
+     }
+     .flight_sec2_h2{
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    .flight_sec2_sub_cart2{
+        margin: 0 0 0 0;
+    }
+    .flight_sec2_img2 img{
+        display: block;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+     }
+     .about_shape2{
+        top: 600px;
+     }
+     .conact_form{
+        padding: 0 0 0 0px;
+        margin: 0 0 0 0px;
+     }
+}
