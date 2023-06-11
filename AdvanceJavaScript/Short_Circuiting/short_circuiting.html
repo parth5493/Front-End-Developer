@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Circuiting Practice</title>
+</head>
+<body>
+    <h2>Short Circuiting</h2>
+    <p>What is the use of short-circuit operator?
+        A short-circuit operator is used in advavced javascript to execute a second argument 
+        when the first argument's outcome is not sufficient to evaluate the full expression</p>
+
+    <p>Sometimes we need to use something before intialization. 
+        We can not proceed in javascript 
+        as it is synchoronous languages(all code excecuted at same time not line by line like in other languages).
+        In this situation, we need to use short-circuitong concept in advavced javascript. It symbol is "?". 
+    </p>
+    
+    <script>
+        let user = "Kriva"
+        console.log(user.parth);
+
+      //console.log(3.hiral); // this gives us error.
+        console.log(3?.hiral); // this will works. It short circuited with ?. we use hiral variable before intailization.
+
+        let hiral = "Wife"
+
+        if (true == true || foo.foo) {
+            console.log("Called inside if"); // short circuiting with OR || operator
+        }
+
+        if (false && foo.foo) {
+            console.log("Called inside else"); // short ciruiting with AND && operator
+        }
+    </script>
+</body>
+</html>
