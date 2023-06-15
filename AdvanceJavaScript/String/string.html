@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <h2>String Methods</h2>
+    <script>
+        
+        let str1 = "Hello\nWorld"; // two lines using a "newline symbol"
+        console.log(str1);
+        console.log(str1.__proto__);
+
+        // two lines using a normal newline and backticks
+        let str2 = `HelloWorld`;
+
+        console.log(str1 == str2); // true
+        console.log(str1.length); // 11
+        console.log(str1[0]); // true
+
+        console.log('Interface'.toUpperCase()); // INTERFACE
+        console.log('Interface'.toLowerCase()); // interface
+
+        let strWidget = 'Widget with id';
+        console.log(strWidget);
+
+        console.log(strWidget.indexOf('Widget')); // 0, because 'Widget' is found at the beginning
+        console.log(strWidget.indexOf('widget')); // -1, not found, the search is case-sensitive
+
+        console.log(strWidget.indexOf("id")); // 1, "id" is found at the position 1 (..idget with id)
+
+        console.log("Widget with id".includes("Widget")); // true
+
+        console.log("Hello".includes("Bye")); // false
+
+        console.log("Widget".startsWith("Wid")); // true, "Widget" starts with "Wid"
+        console.log("Widget".endsWith("get")); // true, "Widget" ends with "get"
+
+        let str_slice = "stringify";
+        console.log(str_slice.slice(0, 5)); // 'strin', the substring from 0 to 5 (not including 5)
+        console.log(str_slice.slice(0, 1)); // 's', from 0 to 1, but not including 1, so only character at 0
+
+
+        let substring_str = "stringify";
+
+        // these are same for substring
+        console.log(substring_str.substring(2, 6)); // "ring"
+        console.log(substring_str.substring(6, 2)); // "ring"
+
+        // ...but not for slice:
+        console.log(substring_str.slice(2, 6)); // "ring" (the same)
+        console.log(substring_str.slice(6, 2)); // "" (an empty string)
+    </script>
+</body>
+</html>

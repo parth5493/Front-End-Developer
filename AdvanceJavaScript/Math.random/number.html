@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Random Practice</title>
+</head>
+<body>
+    <h2>Math.Random Method</h2>
+    <p>We get any random number between 0 and 1.</p>
+    <p>We use this method for OTP.</p>
+
+    <h2>Math.ceil()</h2>
+    <p>It returns approximate larger of X.</p>
+
+    <h2>Math.floor()</h2>
+    <p>It returns approximate smaller of X.</p>
+
+    <h2>Math.round()</h2>
+    <p>It returns larger value if digit after . is greater or equal to 5 and it returns smaller value if digit after . is smaller than 5</p>
+
+    <h2>variable_name.__proto__</h2>
+    <p>It provides all the in-built methods which can be relatable to declared variable</p>
+
+    <h2>Number.isFinite()</h2>
+    <p>It checks numbers which finite or not, give results in boolean values.</p>
+
+    <h2>Number.isNaN()</h2>
+    <p>It checks value is not a number or not, give results in boolean value.It is not a number then true or its false.</p>
+    <script>
+        document.write(Math.random())
+
+        function getnumber(min,max) {
+            document.write(Math.random()*((max-min)+min))
+            
+        }
+        document.write("<br>")
+        getnumber(3,5)
+
+        document.write("<br>")
+
+        let a = Math.random()
+        console.log(a.__proto__);
+        document.write("<br>")
+       // console.log(a)
+       // console.log(Math.ceil(a))
+       // console.log(Math.floor(a));
+
+
+     /*   console.log(Math.ceil(4.48)); //Output 5
+        console.log(Math.floor(4.48)); // Output 4
+        console.log(Math.round(4.485)); // Output 4
+        console.log(Math.round(4.54)); // Output 5*/
+
+        let otp = Math.random()
+        document.write(Math.floor(otp*10))
+
+       let b = 5
+       console.log(b.toString());
+       console.log(typeof b, b);
+
+       let data = Math.round(Math.random()*45)
+       let data1 = Math.round(Math.random()*45)
+       console.log("valueOf", data.toString()+data1.toString());
+
+       let finite = Number.isFinite(568)
+       console.log(finite);
+       console.log(Number.isFinite(Infinity));
+
+       console.log(Number.isNaN(NaN));
+       console.log(Number.isNaN(568));
+    </script>
+</body>
+</html>
