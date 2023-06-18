@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackTick Template Litrals</title>
+</head>
+<body>
+    <h2>BackTick Template Litrals</h2>
+    <p>In JavaScript or script mode, enter property does not allow in string ('' or "").</p>
+    <p>To overcome this situation, we have backtick ``. It supports multiline string.</p>
+    <p>When we want to print variable dynamically, we use template litrals. <b>It is also sometimes called template string or tag template.</b></p>
+
+    <div id="id"></div>
+
+    <!--<table>
+        <tr>
+            <td>Hiral</td>
+        </tr>
+    </table>-->
+
+    <script>
+        let a = "Kriva"
+
+       /* let HtmlTableData = "<table>
+        <tr>
+            <td>Hiral</td>              // "" string does not support enter.
+        </tr>
+    </table>"*/
+
+    /*let HtmlTableData = '<table>
+        <tr>
+            <td>Hiral</td>              // '' string does not support enter.
+        </tr>
+    </table>'*/
+
+    // let HtmlTableData = "<table><tr><td>Hiral</td></tr></table>" // String allows all tags in same line
+    //let HtmlTableData = '<table><tr><td>Hiral</td></tr></table>' // String allows all tags in same line
+    //let HtmlTableData = '<table><tr><td><b>'+ a +'</b></td></tr></table>' // This called concatenate.
+
+   /* let HtmlTableData = `<table>
+        <tr>
+            <td>Hiral</td>                          
+        </tr>
+    </table>` // Backtick `` supports enter.*/
+
+    let HtmlTableData = `<table>
+        <tr>
+            <td>${a}</td>                          
+        </tr>
+    </table>` // This is called template litrals. We use it for concatenate while using backtick ``.
+    document.getElementById("id").innerHTML = HtmlTableData
+    </script>
+</body>
+</html>

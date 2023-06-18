@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+</head>
+<body>
+    <h2>Set</h2>
+    <p>A Set is a special type collection – “set of values” (without keys), where each value may occur only once.</p>
+
+    <ul>
+        <li>new Set([iterable]) – creates the set, and if an iterable object is provided (usually an array), copies values from it into the set.</li>
+        <li>set.add(value) – adds a value, returns the set itself.</li>
+        <li>set.delete(value) – removes the value, returns true if value existed at the moment of the call, otherwise false.</li>
+        <li>set.has(value) – returns true if the value exists in the set, otherwise false.</li>
+        <li>set.clear() – removes everything from the set.</li>
+        <li>set.size – is the elements count.</li>    
+    </ul>
+
+    <script>
+        let set = new Set()
+
+        let name1 = {name: "Kriva"}
+        let name2 = {name: "Hiral"}
+        let name3 = {name: "Jenny"}
+
+        set.add(name1)
+        set.add(name2)
+        set.add(name3)
+
+        console.log(set);
+
+        for (let user of set) {
+           console.log(user.name);
+        }
+
+        // Iteration over Set Starts
+
+        let set2 = new Set(["Mango", "Banana", "Apple"])
+
+        set2.forEach(value => {
+            console.log(value);
+        });
+
+        // Iteration over Set Ends
+    </script>
+</body>
+</html>

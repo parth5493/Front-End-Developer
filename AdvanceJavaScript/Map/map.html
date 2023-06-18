@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <h2>Map</h2>
+    <p>It is same like object and array. With map, we can create object and array. But we can set any data types as a key.</p>
+    <h3>Map Methods</h3>
+    <ul>
+        <li>new Map() – creates the map.</li>
+        <li>map.set(key, value) – stores the value by the key.</li>
+        <li>map.get(key) – returns the value by the key, undefined if key doesn’t exist in map.</li>
+        <li> map.has(key) – returns true if the key exists, false otherwise.</li>
+        <li>map.delete(key) – removes the element (the key/value pair) by the key.</li>
+        <li>map.clear() – removes everything from the map.</li>
+        <li>map.size – returns the current element count.</li>
+    </ul>
+    <p>Object.entries(object): If we have a plain object, and we’d like to create a Map from it, 
+        then we can use built-in method Object.entries(obj)
+         that returns an array of key/value pairs for an object exactly in that format.</p>
+
+    <p>Object.fromEntries: Object from Map : We can create object from map.</p>     
+    <script>
+       /* let map = new Map()
+
+        map.set(1, "1") // a Number Key
+        map.set(true, "true") // a Boolean Key
+        map.set("Kriva", "Kriva") // a String Key
+
+        console.log(map);
+
+        console.log(map.get(1)); // It gets value of mentioned key
+        console.log(map.has("Kriva")); // It checks mentioned key. If it has, output will be true or it has not, output will be false
+        console.log(map.has("kriva")); // It is case sensitive. Output is false
+        console.log(map.size); // It provides size of map
+        console.log(map.delete(true)); // It deletes mention key.
+        console.log(map);
+        console.log(map.clear());
+        console.log(map); */
+
+        // Iteration over Map Start
+
+        let item = new Map([
+            ["tomato", 300],
+            ["onion", 400],
+            ["potato", 500]
+        ])
+
+        for (let vegetables of item.keys()) {
+            console.log(vegetables);
+        }
+
+        for (let amount of item.values()) {
+            console.log(amount);
+        }
+
+        for (let entry of item) {
+            console.log(item);
+        }
+
+        // Iteration over Map End
+
+        // Object.entries(object) Starts
+
+        let obj = {
+            name: "Kriva",
+            age: 1
+        }
+
+        let map = new Map(Object.entries(obj)) // we can create map by using object
+
+        console.log(map.get("name")); 
+
+        // Object.entries(object) Ends
+
+        // Object.fromEntries Starts
+
+        let map2 = new Map();
+
+        map2.set("Kriva", 1);
+        map2.set("Hiral", 2);
+        map2.set("Jenny", 5);
+
+        let obj2 = Object.fromEntries(map2.entries())
+
+        console.log(obj2.Kriva);
+    </script>
+</body>
+</html>

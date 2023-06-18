@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object This</title>
+</head>
+<body>
+    <h2>Object This</h2>
+    <p>We can make function inside the object.</p>
+    <p>When we want to point out object owns memory, we use <b>this</b> keyword.</p>
+
+    <script>
+        let detail = {
+            name : "Kriva",
+            age : 1,
+            color : "pink",
+
+            fun(){
+                console.log("Called", this.name);
+            }
+        };
+
+        detail.fun()
+    </script>
+</body>
+</html>
