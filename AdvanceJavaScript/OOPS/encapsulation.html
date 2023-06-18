@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation</title>
+</head>
+<body>
+    <h2>Encapsulation</h2>
+    <p>Encapsulation can be defined as “the packing of data and functions into one component.</p>
+    <p>We define one class and we add all functions and objects inside that class. So, we perform all functionality through that class.</p>
+    <p>Here we can perform every objects and functions through one class.</p>
+    <p>We can define class using class keyword.</p>
+    <p>Without instance of class we cant access the properties of that class</p>
+    <p>instance means we needs to craete an object of that class </p>
+    <p>we can craete an object by new keyword</p>
+
+    <script>
+        class ClassOfParth{
+            addition(...a){
+                console.log("called addition function");
+                let otherdata = 0
+                a.forEach(val => {
+                    otherdata += val
+                });
+                console.log("Addition Results:", otherdata);
+            }
+            subtraction(...b){
+                console.log("called subtraction function");
+                let otherdata2 = 0
+                console.log(b[0]);
+                b.forEach(val2 => {
+                    otherdata2 = b[0]-b[1]
+                });
+                console.log("Subtraction Results:", otherdata2);
+            }
+        }
+        
+        objectofClass = new ClassOfParth
+        objectofClass.addition(50,50)
+        objectofClass.subtraction(60,50)
+
+
+        class ClassOfHiral {
+            multiplication(...c){
+                console.log("Called Multiplication Function");
+                let otherdata3 = c[0]*c[1]*c[2]
+                console.log("Multiplication Results:", otherdata3);
+            } 
+        }
+
+        objectofClass2 = new ClassOfHiral
+        objectofClass2.multiplication(1,2,3)
+
+    </script>
+</body>
+</html>

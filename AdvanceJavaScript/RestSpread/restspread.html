@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rest Spread</title>
+    <title>Rest VS Spread</title>
 </head>
 <body>
-    <h2>Rest Spread</h2>
+    <h2>Rest VS Spread</h2>
+    <h3>Rest</h3>
+    <p>The rest parameter syntax allows a function to accept an indefinite number of arguments as an array.</p>
+    <p>Function can receive multiple arguments.</p>
+    <p>Symbol: ...</p>
+    <p>Syntax: <b>fun(arg1,arg2,...multiplearg)</b></p>
+    <p>Those multiple arguments receives as an array.</p>
+
+    <h3>Spread</h3>
+    <p>It works exactly opposite to rest parameter.</p>
+    <p>Spread receives multiple arguments in different parameters respectivly.</p>
+
+
+    <script>
+
+        // Rest Example Starts
+        function rest(a,b,...c) {
+            console.log(a); // Output 10
+            console.log(b); // Output 20
+            console.log(c); // // Output array [30,40,50]
+            console.log(c[0]); // Output 30
+
+            
+        }
+
+        rest(10,20,30,40,50)
+
+        function addition(d,...e) {
+            otherData = 0
+            e.forEach(val => {
+                console.log(val);
+
+                otherData += val
+            });
+            console.log(otherData);
+            return total = d + otherData
+        }
+        
+        console.log(addition(1,2,3,4)); 
+        console.log(addition(5,6,8));
+
+        // Rest Example Ends
+
+        // Spread Example Starts
+
+        function userDetails(firstname, lastname, village) {
+            console.log(firstname, lastname, village);
+            
+        }
+
+        let name = ["Kriva", "Patel", "Pipodara"]
+        userDetails(...name)
+
+        let name2 = {"a":"Hiral", "b":"Patel", "c": "Sayan"}
+        console.log(Object.entries(name2));
+        console.log(...Object.entries(name2));
+
+        // Spread Example Ends
+    </script>
 </body>
 </html>
