@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance Practice</title>
+</head>
+<body>
+    <h2>Inheritance</h2>
+    <p>We can access parent class properties into child properties.</p>
+    <p>We can do this with <b>extends</b> keyword in child properties.</p>
+
+    <p>Types Of Inheritance</p>
+    <ul>
+        <li>Single Inheritance</li>
+        <li>Multilevel Inheritance</li>
+        <li>Hierarchical Inheritance</li>
+    </ul>
+    <img src="./inheritance.png" alt="">
+    <script>
+        // Parent Class
+
+        class ClassOfAddition{          
+            addition(...a){
+                let addition_result = 0
+                a.forEach(val => {
+                    addition_result += val
+                });                
+                console.log(addition_result);
+                return addition_result
+            }            
+        }
+        //Child Class
+
+        class ClassOfAverage extends ClassOfAddition{
+            average(a,b){
+                let arr = [a,b]
+               // let return_addition = this.addition(a,b)
+                let return_addition = this.addition(...arr)
+                console.log(return_addition );
+            }
+        }
+
+        let ObjectAverage = new ClassOfAverage
+            ObjectAverage.addition(50,50)
+            ObjectAverage.average()
+
+    </script>
+</body>
+</html>
