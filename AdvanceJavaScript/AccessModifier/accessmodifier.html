@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Modifier Practice</title>
+</head>
+<body>
+    <h2>Access Modifier</h2>
+    <p>What is class?</p>
+    <p>Class is collection of datamembers and member function only.</p>
+    <p>Types of Access Modifier</p>
+    <ul>
+        <li>Public Access Modifier: We can access only in self class only.</li>
+        <li>Private Access Modifier: We can access in parent and child class too.</li>
+    </ul>
+
+    <script>
+        class AccessModi{
+            #private = "Kriva"
+            public = "Public"
+            accessmodi1(){
+                console.log("Called Private", this.#private);
+                console.log("Called Public:", this.public);
+            }
+        }
+
+        class AccessModi2 extends AccessModi{
+            accessmodi2(){
+               // console.log("Called Private in Child:", this.#private); // Can not call private datamember in Child Class
+                console.log("Called Public in Child:", this.public);
+            }
+        }
+        let ObjectAccess = new AccessModi2
+            ObjectAccess.accessmodi1()
+            ObjectAccess.accessmodi2()
+    </script>
+</body>
+</html>

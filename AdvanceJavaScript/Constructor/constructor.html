@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor Practice</title>
+</head>
+<body>
+    <h2>Constructor</h2>
+    <p>Function needs to be call after creating object. But Constructor properties are automatically called when we create object of class.</p>
+    <p>Syntax: <b>constructor(){}</b></p>
+    <p>Constructor never return.</p>
+    <p>Constructor uses to intialise some value for class.</p>
+    <script>
+        class ConstructorClass{
+            constructor(){
+                console.log("Called Constructor"); // Called after crearing object
+            }
+            function () {
+                console.log("Called Function"); // Need to be called
+            }
+        }
+
+        let object = new ConstructorClass
+            object.function()
+    </script>
+</body>
+</html>
