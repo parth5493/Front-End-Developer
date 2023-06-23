@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polymorphism Pratice</title>
+</head>
+<body>
+    <h2>Polymorphism</h2>
+    <p>When we want to perform different funtionalities with same function, which concept called polymorphism.</p>
+    <p>It is concept of overriding.</p>
+    <p>With this concept, same function which declares last called.</p>
+    <p>Features</p>
+    <ul>
+        <li>Programmers can use the same method name repeatedly.</li>
+
+    </ul>
+    <script>
+        class Class1{
+            addition(a){
+                console.log("Called Addition 1 Function:",a);
+            }
+            addition(a,b){
+                console.log("Called Addition 2 Function:", a,b);
+            }
+        }
+
+        class Class2 extends Class1{
+            addition(a,b,c){
+                console.log("Called Addition 3 Function:",a,b,c); // This function is calling
+            }
+        }
+
+        // Overriding Concept Starts
+
+
+        //let object = new Class1 // It is overriding 1st addition function and 2nd Addition function Called.
+      /*  let object1 = new Class2 // It is overiding 1st and 2nd addition function and called 3rd addition function.
+            object1.addition(1,2,3)  */ 
+
+            // Overriding Concept Ends
+            
+            
+
+       // Performing mutliple functionality Starts
+        let object1 = new Class1 // It is overiding 1st and 2nd addition function and called 3rd addition function.
+            object1.addition(1,2,3) 
+        let object2 = new Class2
+            object2.addition(1,2,3)     
+       // Performing mutliple functionality Ends     
+    </script>
+</body>
+</html>

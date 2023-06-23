@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstraction Practice</title>
+</head>
+<body>
+    <h2>Abstraction</h2>
+    <p>An abstraction is a way of hiding the implementation details and showing only the functionality to the users. 
+        In other words, it ignores the irrelevant details and shows only the required one.</p>
+    <p>Here we need to call each functions to perform.</p>    
+    <ul>
+        <li>Helps the user to avoid writing low-level code.</li>
+        <li>Avoids code duplication and increases reusability.</li>
+        <li>Can change the internal implementation of a class independently without affecting the user.</li>
+        <li>Helps to increase the security of an application or program as only important details are provided to the
+            user.</li>
+    </ul>    
+    <script>
+        class Class1{
+            function1(a){
+                this.x = a+1 // We are making this function for intialize and implementation.
+            }   
+            function2(){
+                console.log("Called only functionality:", this.x); // We are making this function to perform functionality.
+            }
+                 
+        }           
+
+        let object = new Class1
+            object.function1(2)
+            object.function2()
+    </script>    
+</body>
+</html>
