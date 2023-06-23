@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixin Practice</title>
+</head>
+<body>
+    <h2>Mixin</h2>
+    <p>Mixin is way to use data of object into class.</p>
+    <p>But when we use data of object into object is called Object Inheritance.</p>
+
+    <script>
+        let letMixin = {
+            sayHi(){
+                console.log("Hi,", this.name);
+            },
+            sayBye(){
+                console.log("Bye,", this.name);
+            }
+        }
+
+        class User{
+            constructor(detail){
+                this.name = detail
+            }
+        }
+
+        Object.assign(User.prototype,letMixin)
+        new User("Kriva").sayHi()
+    </script>
+</body>
+</html>

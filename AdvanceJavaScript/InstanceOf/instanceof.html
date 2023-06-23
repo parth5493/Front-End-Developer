@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstanceOf Practice</title>
+</head>
+<body>
+    <h2>InstanceOf</h2>
+    <p>We can check object of class.</p>
+    <p>It returns boolean value as an output.</p>
+    <p>Sometimes, mutliple person work in a team. 
+        So. when we want use some other person class, at that time we use this method to check object of class before we use.</p>
+
+    <script>
+        class Class1{}
+        let object = new Class1
+
+        class Class2{}
+        let object2 = new Class2
+        console.log(object instanceof Class1);  // True
+        console.log(object2 instanceof Class1); // False
+    </script>    
+</body>
+</html>
