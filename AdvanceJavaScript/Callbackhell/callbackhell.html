@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack Hell Practice</title>
+</head>
+<body>
+    <h2>CallBack Hell Or Pyramid Doom</h2>
+    <p>We use this concept when we want to call more function into one another.</p>
+    <script>
+        function insertCard() {
+            api.enterpin(pinverify, function () {
+                api.enteramount(verifyamount, function () {
+                    api.confirmamount(selectsubmit, function () {
+                        api.printreceipt(takereceipt, function () {
+                            console.log("Please visit again and Enjoy your Day");
+                        })
+                    })
+                })
+            })
+        }
+        insertCard(0)
+    </script>
+</body>
+</html>

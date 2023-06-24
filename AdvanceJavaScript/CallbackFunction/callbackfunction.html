@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack Function Practice</title>
+</head>
+<body>
+    <h2>CallBack Function</h2>
+    <p>A callback function is a function passes into another function as an argument,
+         which is perform inside outer function to complete a routine or action,</p>
+    <p>We can increase accessibility of other parameter like $ajax thorough callback function.
+         E.g $ajax is not returning a value. So, in this situation , we use callback function to return value.</p>
+    <script>
+        /*function OuterFunction(clbk) { // Here we receive callback function argument in otherfunction's parameter.
+            console.log("What is your name?");
+            let name = "Kriva" 
+            setTimeout(() => {
+                clbk(name) // Here we call callback function to call.
+            }, 2000);
+        }
+        function InsiderFunction(name) {
+            console.log("My name is",name);
+        }
+
+        OuterFunction(InsiderFunction) // Here we pass callback function as an argument.*/
+
+
+        // Practical Example
+
+        function cardProcess(clbk2) {
+            console.log("Insert card, Enter your pin");
+            let amount = prompt("Enter your amount")
+            setTimeout(() => {
+                clbk2(amount)
+            }, 2000);
+        }
+        function ProcessSummery(amount) {
+            console.log("Your Receipt of amount", amount);
+        }
+
+        cardProcess(ProcessSummery)
+    </script>    
+</body>
+</html>

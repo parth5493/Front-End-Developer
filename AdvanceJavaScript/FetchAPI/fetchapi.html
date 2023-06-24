@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+<body>
+    <h2>Fetch API</h2>
+    <p>We can access or get api data with fetch.</p>
+
+    <ul id="APIData">
+
+    </ul>
+
+    <script>
+       // fetch("https://jayramin.000webhostapp.com/allusers").then((res)=>{console.log(res);})
+
+      // fetch("https://jayramin.000webhostapp.com/allusers").then((res)=> {return res.json()})
+
+     /* fetch("https://jayramin.000webhostapp.com/allusers").then((res)=>res.json()).then((ResponseData)=>{
+        //console.log(ResponseData);
+       // console.log(ResponseData.Data);
+       PrintHTML = ""
+       
+       ResponseData.Data.forEach(element => {
+            //console.log(element);
+            console.log(element.username);
+            PrintHTML += `<li>${element.username}</li>`
+       });
+       document.getElementById("APIData").innerHTML = PrintHTML
+      })*/
+
+
+      // Fetch more Practice
+
+      fetch("https://jayramin.000webhostapp.com/allusers").then((res)=>res.json()).then((TakeData)=>{
+       // console.log(TakeData);
+       // console.log(TakeData.Data);
+
+       HTML = ""
+       TakeData.Data.forEach(element => {
+         console.log(element.username);
+         HTML += `<li>${element.username}</li>`
+       });
+
+       document.getElementById("APIData").innerHTML  = HTML
+      })
+    </script>
+</body>
+</html>

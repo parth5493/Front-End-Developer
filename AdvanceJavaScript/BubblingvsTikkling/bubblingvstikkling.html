@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling Vs Tikkling Practice</title>
+</head>
+<body>
+    <h2>Bubbling Vs Tikkling</h2>
+    <p>Tikkling: When we want to perform parent event first then perform child event. <b>(true)</b></p>
+    <p>Bubbling: When we want to perform child event first then perform parent event. <b>(false)</b></p>
+
+    <p>event.stopPropagation(): It stops bubbling and tikkling event.</p>
+
+    <div id="a">
+        <button id="b">Press Here</button>
+    </div>
+
+    <script>
+        // Tikkling Starts
+
+      /*  let parent = document.querySelector("#a")
+            parent.addEventListener("click", function () {
+                console.log("Parent is ivoked");
+            },true)
+
+        let child = document.querySelector("#b")
+            child.addEventListener("click", function () {
+                console.log("Child is ivoked");
+            }, true)*/
+
+         // Tikkling Ends
+
+         // Bubbling Starts
+         let parent = document.querySelector("#a")
+            parent.addEventListener("click", function () {
+                event.stopPropagation()
+                console.log("Parent is ivoked");
+            },false)
+
+        let child = document.querySelector("#b")
+            child.addEventListener("click", function () {
+                event.stopPropagation()
+                console.log("Child is ivoked");
+            }, false)
+         // Bubbling Ends 
+    </script>
+</body>
+</html>
