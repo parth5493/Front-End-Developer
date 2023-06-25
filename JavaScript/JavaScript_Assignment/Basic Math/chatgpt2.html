@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    .calculator {
+      width: 200px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    input[type="button"] {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="number1" placeholder="Number 1" /><br>
+    <input type="text" id="number2" placeholder="Number 2" /><br>
+    <input type="button" value="Add" onclick="addNumbers()" /><br>
+    <input type="text" id="result" readonly="readonly" />
+  </div>
+
+  <script>
+    function addNumbers() {
+      let number1 = parseFloat(document.getElementById('number1').value);
+      let number2 = parseFloat(document.getElementById('number2').value);
+
+      if (isNaN(number1) || isNaN(number2)) {
+        document.getElementById('result').value = 'Invalid input';
+      } else {
+        let result = number1 + number2;
+        document.getElementById('result').value = result;
+      }
+    }
+  </script>
+</body>
+</html>
