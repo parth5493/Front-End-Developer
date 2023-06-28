@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async and Await Practice</title>
+</head>
+<body>
+    <h2>Async and Await</h2>
+    <p>They enable asynchronous.</p>
+    <p>Async and await are always working together.</p>
+    <p>Async keyword is used to declare that a particular function is asynchronous. 
+        The await keyword waits for the execution of the async function's code block until a promise is fulfilled or rejected.</p>
+
+    <script>
+        // JavaScript Synchronou Behaviour Starts
+
+        /*function resolvedafter2sec() {
+            setTimeout(() => {
+                console.log("Resolved Function Called");
+            }, 2000);
+        }
+
+        function asyncfunction() {
+            console.log("asyncfunction called before");
+            resolvedafter2sec()
+            console.log("asyncfunction called after");
+        }
+
+        asyncfunction()*/
+
+        //JavaScript Synchronou Behaviour Ends
+
+        // JavaScript Asynchronou Behaviour Starts
+
+        function resolvedafter2sec() {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    resolve("Resolved Function Called");
+                }, 2000);
+            })
+        }
+
+        async function asyncfunction() {
+            console.log("asyncfunction called before");
+            let async = await resolvedafter2sec()
+            console.log(async);
+            console.log("asyncfunction called after");
+        }
+
+        asyncfunction()
+
+        // JavaScript Asynchronou Behaviour Ends
+
+    </script>
+
+</body>
+</html>
