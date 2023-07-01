@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    column-gap: 5px;
+}
+.col-30{
+    width: 30%;
+}
+.col-10{
+    width: 10%;
+}
+.col-60{
+    width: 60%;
+}
+.col_align{
+    border: 3px solid black;
+    background-color: rgb(95, 95, 204);
+}
+.div_p{
+    text-align: center;
+    padding-top: 5x;
+}
+.div_extra{
+    padding: 120px 120px;
+}
+.row_2{
+    display: flex;
+    margin-top: 15px;
+}
+.col-55{
+    width: 55%;
+    background-color: aqua;
+    color: blue;
+}
+.col-35{
+    width: 35%;
+    background-color: rgb(218, 110, 71);
+}
+.col-15{
+    width: 15%;
+    background-color: aqua;
+    color: blue;
+}
+.col_align2{
+    border: 3px solid black;
+}
+.div_p2 p{
+    text-align: center;
+    padding: 5px 0 10px 0;
+}
