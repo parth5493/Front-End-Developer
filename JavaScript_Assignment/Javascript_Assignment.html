@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment</title>
+    <style>
+        .color{
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="name"></div>
+    <script>
+        "use srtict"
+       
+       let h1 = document.createElement("h1")
+           h1.innerHTML = "Kriva"
+           document.body.appendChild(h1)
+           h1.classList.add("color")
+
+
+       let d = "Kriva"
+
+
+       let name = "<b>"+ d +"</b>"
+       let print_name = document.getElementById("name").innerHTML = name
+       
+
+        /*let a = -Number.MAX_VALUE
+        console.log(a); // -1.7976931348623157e+308
+
+        let b 
+        console.log(b); // Undefined
+
+
+        //console.log(c); // ReferenceError: "C is not define."*/
+
+        let f = "6"
+        let g = 6
+
+        console.log(f===g); // Output: false
+
+        let number = parseInt("6") 
+        console.log(number);
+
+
+    </script>
+</body>
+</html>

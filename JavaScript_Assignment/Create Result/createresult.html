@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Result</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script>
+        let h2 = document.createElement("h2")
+        h2.innerHTML = "Marksheet for Information Technology"
+        document.body.appendChild(h2)
+
+        let p = document.createElement("p")
+        p.innerHTML = "Enter Marks"
+        document.body.append(p)
+
+        let form = document.createElement("form")
+        document.body.appendChild(form)
+
+        let table = document.createElement("table")
+        form.appendChild(table)
+
+        let tr1 = document.createElement("tr")
+        table.appendChild(tr1)
+        
+        let td1 = document.createElement("td")
+        tr1.appendChild(td1)
+
+        let label1 = document.createElement("label")
+        label1.innerHTML = "1. C Language"
+        td1.appendChild(label1)
+
+        let td1_2 = document.createElement("td")
+        tr1.appendChild(td1_2)
+
+        let input1 = document.createElement("input")
+        input1.setAttribute("type", "number")
+        input1.setAttribute("id", "input1")
+        td1_2.appendChild(input1)
+
+        let tr2 = document.createElement("tr")
+        table.appendChild(tr2)
+        
+        let td2 = document.createElement("td")
+        tr2.appendChild(td2)
+
+        let label2 = document.createElement("label")
+        label2.innerHTML = "2. C++ Language"
+        td2.appendChild(label2)
+
+        let td2_2 = document.createElement("td")
+        tr2.appendChild(td2_2)
+
+        let input2 = document.createElement("input")
+        input2.setAttribute("type", "number")
+        input2.setAttribute("id", "input2")
+        td2_2.appendChild(input2)
+
+        let tr3 = document.createElement("tr")
+        table.appendChild(tr3)
+        
+        let td3 = document.createElement("td")
+        tr3.appendChild(td3)
+
+        let label3 = document.createElement("label")
+        label3.innerHTML = "3 Database"
+        td3.appendChild(label3)
+
+        let td3_2 = document.createElement("td")
+        tr3.appendChild(td3_2)
+
+        let input3 = document.createElement("input")
+        input3.setAttribute("type", "number")
+        input3.setAttribute("id", "input3")
+        td3_2.appendChild(input3)
+
+        let tr4 = document.createElement("tr")
+        table.appendChild(tr4)
+        
+        let td4 = document.createElement("td")
+        tr4.appendChild(td4)
+
+        let label4 = document.createElement("label")
+        label4.innerHTML = "4 HTML"
+        td4.appendChild(label4)
+
+        let td4_2 = document.createElement("td")
+        tr4.appendChild(td4_2)
+
+        let input4 = document.createElement("input")
+        input4.setAttribute("type", "number")
+        input4.setAttribute("id", "input4")
+        td4_2.appendChild(input4)
+
+        let tr5 = document.createElement("tr")
+        table.appendChild(tr5)
+        
+        let td5 = document.createElement("td")
+        tr5.appendChild(td5)
+
+        let label5 = document.createElement("label")
+        label5.innerHTML = "5 CSS"
+        td5.appendChild(label5)
+
+        let td5_2 = document.createElement("td")
+        tr5.appendChild(td5_2)
+
+        let input5 = document.createElement("input")
+        input5.setAttribute("type", "number")
+        input5.setAttribute("id", "input5")
+        td5_2.appendChild(input5)
+
+        let tr6 = document.createElement("tr")
+        table.appendChild(tr6)
+        
+        let td6 = document.createElement("td")
+        tr6.appendChild(td6)
+
+        let label6 = document.createElement("label")
+        label6.innerHTML = "6 php"
+        td6.appendChild(label6)
+
+        let td6_2 = document.createElement("td")
+        tr6.appendChild(td6_2)
+
+        let input6 = document.createElement("input")
+        input6.setAttribute("type", "number")
+        input6.setAttribute("id", "input6")
+        td6_2.appendChild(input6)
+
+        let tr7 = document.createElement("tr")
+        table.appendChild(tr7)
+        
+        let td7 = document.createElement("td")
+        tr7.appendChild(td7)
+
+        let label7 = document.createElement("label")
+        label7.innerHTML = "7 Core Java"
+        td7.appendChild(label7)
+
+        let td7_2 = document.createElement("td")
+        tr7.appendChild(td7_2)
+
+        let input7 = document.createElement("input")
+        input7.setAttribute("type", "number")
+        input7.setAttribute("id", "input7")
+        td7_2.appendChild(input7)
+
+        let tr8 = document.createElement("tr")
+        table.appendChild(tr8)
+
+        let td8 = document.createElement("td")
+        tr8.appendChild(td8)
+
+        let td8_2 = document.createElement("td")
+        tr8.appendChild(td8_2)
+
+        let btn = document.createElement("button")
+        btn.innerHTML = "Result"
+        btn.setAttribute("id", "btn")
+        td8_2.appendChild(btn)
+
+        let tr9 = document.createElement("tr")
+        table.appendChild(tr9)
+        
+        let td9 = document.createElement("td")
+        tr9.appendChild(td9)
+
+        let label9 = document.createElement("label")
+        label9.innerHTML = "Total is:"
+        td9.appendChild(label9)
+
+        let span1 = document.createElement("span")
+        span1.setAttribute("id", "span1")
+        td9.appendChild(span1)
+
+        let span2 = document.createElement("span")
+        span2.innerHTML = " / 350"
+        span2.setAttribute("id", "span1")
+        span1.appendChild(span2)
+        
+        let td9_2 = document.createElement("td")
+        tr9.appendChild(td9_2)
+
+        let label9_2 = document.createElement("label")
+        label9_2.innerHTML = "Percentage is:"
+        td9_2.appendChild(label9_2)
+
+        let span3 = document.createElement("span")
+        span3.innerHTML = " %"
+        span3.setAttribute("id", "span3")
+        td9_2.appendChild(span3)
+        
+        let total_btn = document.getElementById("btn")
+
+        total_btn.addEventListener("click", function () {
+            let number1 = parseFloat(document.getElementById("input1").value)
+            let number2 = parseFloat(document.getElementById("input2").value)
+            let number3 = parseFloat(document.getElementById("input3").value)
+            let number4 = parseFloat(document.getElementById("input4").value)
+            let number5 = parseFloat(document.getElementById("input5").value)
+            let number6 = parseFloat(document.getElementById("input6").value)
+            let number7 = parseFloat(document.getElementById("input7").value)
+
+            let total = number1 + number2 + number3 + number4 + number5 + number6 + number7
+            console.log(total);
+
+            event.preventDefault()
+
+            let span_app = document.createElement("span")
+            span_app.innerHTML = total
+            span2.prepend(span_app)
+            span_app.classList.add("answer")
+
+            let percentage = (total*100) / 350
+            let percentage_digit = percentage.toFixed()
+
+            let span_app2 = document.createElement("span")
+            span_app2.innerHTML = percentage_digit
+            span3.prepend(span_app2)
+            span_app2.classList.add("answer")
+        })
+
+    </script>
+</body>
+</html>

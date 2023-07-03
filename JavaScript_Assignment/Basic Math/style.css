@@ -1,0 +1,21 @@
+.h2_class{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+.table{
+    margin: 0 auto;
+}
+.input_margin{
+    margin-left: 50px;
+}
+.answer{
+    color: blue;
+    font-size: 15px;
+    font-weight: 800;
+}
+.btn{
+    padding: 5px 10px 5px 10px;
+    margin: 0 2px 0 2px;
+}

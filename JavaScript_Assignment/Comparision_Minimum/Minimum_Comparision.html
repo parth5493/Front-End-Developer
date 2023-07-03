@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Minimum Number</title>
+</head>
+<body>
+    <script>
+        let h2 = document.createElement("h2")
+            h2.innerHTML = "Enter any two number to display which <br> number is minimum from then "
+            document.body.appendChild(h2)
+
+        let table = document.createElement("table")
+            document.body.appendChild(table)
+        
+        let tr1 = document.createElement("tr")
+            table.appendChild(tr1)
+
+        let td1 = document.createElement("td")
+            tr1.appendChild(td1)
+
+        let label1 = document.createElement("label")
+            label1.innerHTML = "1st Number"
+            td1.appendChild(label1)
+
+        let td1_2 = document.createElement("td")
+            tr1.appendChild(td1_2)
+
+        let input1 = document.createElement("input")
+            input1.setAttribute("type", "number")
+            input1.setAttribute("id", "input1")
+            td1_2.appendChild(input1)
+
+        let tr2 = document.createElement("tr")
+            table.appendChild(tr2)
+
+        let td2 = document.createElement("td")
+            tr2.appendChild(td2)
+
+        let label2 = document.createElement("label")
+            label2.innerHTML = "2nd Number"
+            td2.appendChild(label2)
+
+        let td2_2 = document.createElement("td")
+            tr2.appendChild(td2_2)
+
+        let input2 = document.createElement("input")
+            input2.setAttribute("type", "number")
+            input2.setAttribute("id", "input2")
+            td2_2.appendChild(input2)
+
+        let tr3 = document.createElement("tr")
+            table.appendChild(tr3)
+
+        let td3 = document.createElement("td")
+            tr3.appendChild(td3)
+
+        let td3_2 = document.createElement("td")
+            tr3.appendChild(td3_2)
+
+        let btn = document.createElement("button")
+            btn.innerHTML = "Display"
+            btn.setAttribute("id", "btn")
+            td3_2.appendChild(btn)
+
+        let tr4 = document.createElement("tr")
+            table.appendChild(tr4)
+
+        let td4 = document.createElement("td")
+            tr4.appendChild(td4)
+
+        let td4_2 = document.createElement("td")
+            tr4.appendChild(td4_2)
+
+        let span = document.createElement("span")
+            span.innerHTML = " is minimum"
+            span.setAttribute("id", "span")
+            td4_2.appendChild(span)
+
+        let btn_lis = document.getElementById("btn")
+
+        btn_lis.addEventListener("click", function () {
+            
+            let input1_lis = parseFloat(document.getElementById("input1").value)
+            let input2_lis = parseFloat(document.getElementById("input2").value)
+
+            if (input1_lis < input2_lis) {
+                span.prepend(input1_lis)
+            } else {
+                span.prepend(input2_lis)
+            }
+
+        })
+    </script>
+</body>
+</html>

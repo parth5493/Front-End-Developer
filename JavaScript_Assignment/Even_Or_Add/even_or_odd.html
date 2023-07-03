@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Even or Odd</title>
+    <style>
+        .color{
+            color: blue;
+            padding-left: 10px;
+        }
+        .p{
+            margin-left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let h2 = document.createElement("h2")
+            h2.innerHTML = "Check Inputed Number Even or Odd"
+            document.body.appendChild(h2)
+
+        let table = document.createElement("table")
+            document.body.appendChild(table)
+
+        let tr1 = document.createElement("tr")
+            table.appendChild(tr1)
+            
+        let td1 = document.createElement("label")
+            td1.innerHTML = "Enter any Number:"
+            tr1.appendChild(td1)
+
+        let td2 = document.createElement("input")
+            td2.setAttribute("type", "number")
+            td2.setAttribute("id", "input")
+            tr1.appendChild(td2)
+
+        let button = document.createElement("button")
+            button.innerHTML = "Check"
+            button.setAttribute("id", "btn")
+            document.body.appendChild(button)
+
+        let p = document.createElement("p")
+            p.innerHTML = "Answer is:"
+            document.body.appendChild(p)
+            p.classList.add("p")
+
+        let button_lis = document.getElementById("btn")
+
+        button_lis.addEventListener("click", function () {
+
+            let input_lis = parseFloat(document.getElementById("input").value) 
+            let span = document.createElement("span")
+                p.appendChild(span)
+                span.classList.add("color")
+            
+            if (input_lis % 2 == 0) {
+                span.innerHTML = "Number is EVEN"                
+            } else {
+                span.innerHTML = "Number is ODD"  
+            }
+
+            
+        })
+    </script>
+</body>
+</html>
